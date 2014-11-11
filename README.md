@@ -1,4 +1,6 @@
-disk-player
+hls-player
 ===========
 
-M3U 视频播放解决方案
+HLS  （HTTP Live Streaming）
+
+support： *.m3u8
