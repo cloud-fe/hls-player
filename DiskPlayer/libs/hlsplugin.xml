@@ -1,0 +1,538 @@
+<flex-config>
+   <!-- benchmark: 输出性能基准-->
+   <!-- benchmark usage:
+   <benchmark>boolean</benchmark>
+   -->
+   <compiler>
+      <!-- compiler.accessible: 生成可访问的 SWF-->
+      <accessible>false</accessible>
+      <!-- compiler.actionscript-file-encoding: 指定 Actionscript 文件编码。如果 AS3 源文件中没有 BOM，则编译器将使用此文件编码。-->
+      <!-- compiler.actionscript-file-encoding usage:
+      <actionscript-file-encoding>string</actionscript-file-encoding>
+      -->
+      <!-- compiler.allow-source-path-overlap: 检查源路径条目是否是其它源路径条目的子目录。这有助于明确 MXML 组件的数据包名称。-->
+      <allow-source-path-overlap>false</allow-source-path-overlap>
+      <!-- compiler.as3: 使用基于 ActionScript 3 类的对象模型可以获得更高的性能和更出色的错误报告功能。在基于类的对象模型中，大多数内置函数是作为类的固定方法执行的。-->
+      <as3>true</as3>
+      <!-- compiler.compress usage:
+      <compress>boolean</compress>
+      -->
+      <!-- compiler.context-root: 用于替换服务通道端点的 {context.root} 标记的路径-->
+      <!-- compiler.context-root usage:
+      <context-root>context-path</context-root>
+      -->
+      <!-- compiler.debug: 生成适于进行调试的电影-->
+      <debug>true</debug>
+      <!-- compiler.defaults-css-files usage:
+      <defaults-css-files>
+         <filename>string</filename>
+         <filename>string</filename>
+      </defaults-css-files>
+      -->
+      <!-- compiler.defaults-css-url: 定义默认样式表的位置。设置此选项可重写 framework.swc 文件中 defaults.css 样式表的隐式使用。-->
+      <!-- compiler.defaults-css-url usage:
+      <defaults-css-url>string</defaults-css-url>
+      -->
+      <!-- compiler.define: 定义全局 AS3 条件编译定义，例如 -define=CONFIG::debugging,true 或 -define+=CONFIG::debugging,true（以追加到 flex-config.xml 中的现有定义）-->
+      <define>
+         <name>CONFIG::LOGGING</name>
+         <value>false</value>
+      </define>
+      <define>
+         <name>CONFIG::FLASH_10_1</name>
+         <value>true</value>
+      </define>
+      <define>
+         <name>CONFIG::PLATFORM</name>
+         <value>true</value>
+      </define>
+      <!-- compiler.enable-runtime-design-layers usage:
+      <enable-runtime-design-layers>boolean</enable-runtime-design-layers>
+      -->
+      <!-- compiler.es: 使用基于 ECMAScript 版本 3 原型的对象模型以允许动态重写原型属性。在基于原型的对象模型中，内置函数是作为原型对象的动态属性执行的。-->
+      <es>false</es>
+      <extensions>
+         <!-- compiler.extensions.extension usage:
+         <extension>
+            <extension>string</extension>
+            <parameters>string</parameters>
+         </extension>
+         -->
+      </extensions>
+      <!-- compiler.external-library-path: 要进行编译但忽略链接的 SWC 文件或目录列表-->
+      <external-library-path>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\player\11.1\playerglobal.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\framework.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\textLayout.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\spark.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\sparkskins.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\rpc.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\charts.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\spark_dmv.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\mx\mx.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\advancedgrids.swc</path-element>
+      </external-library-path>
+      <fonts>
+         <!-- compiler.fonts.advanced-anti-aliasing: 为嵌入字体启用高级消除锯齿，该功能可为小字体提供更高的清晰度。-->
+         <advanced-anti-aliasing>true</advanced-anti-aliasing>
+         <!-- compiler.fonts.flash-type: 为嵌入字体启用 FlashType，该功能可为小字体提供更高的清晰度。-->
+         <!-- compiler.fonts.flash-type usage:
+         <flash-type>boolean</flash-type>
+         -->
+         <languages>
+            <!-- compiler.fonts.languages.language-range: 限制嵌入 SWF 中的字体字形数的范围-->
+            <!-- compiler.fonts.languages.language-range usage:
+            <language-range>
+               <lang>string</lang>
+               <range>string</range>
+               <range>string</range>
+            </language-range>
+            -->
+         </languages>
+         <!-- compiler.fonts.local-font-paths usage:
+         <local-font-paths>
+            <path-element>string</path-element>
+            <path-element>string</path-element>
+         </local-font-paths>
+         -->
+         <!-- compiler.fonts.local-fonts-snapshot: 包含由 flex2.tools.FontSnapshot 生成的系统字体数据的文件。-->
+         <local-fonts-snapshot>${flexlib}/localFonts.ser</local-fonts-snapshot>
+         <!-- compiler.fonts.managers: 编译器字体管理器类，以策略解析排序-->
+         <managers>
+            <manager-class>flash.fonts.JREFontManager</manager-class>
+            <manager-class>flash.fonts.BatikFontManager</manager-class>
+            <manager-class>flash.fonts.AFEFontManager</manager-class>
+            <manager-class>flash.fonts.CFFFontManager</manager-class>
+         </managers>
+         <!-- compiler.fonts.max-cached-fonts: 设置在服务器缓存中保留的字体的最大数目。默认值为 20。-->
+         <max-cached-fonts>20</max-cached-fonts>
+         <!-- compiler.fonts.max-glyphs-per-face: 设置在服务器缓存中为每种字体保留的字符字形轮廓的最大数目。默认值为 1000。-->
+         <max-glyphs-per-face>1000</max-glyphs-per-face>
+      </fonts>
+      <!-- compiler.headless-server: 当 Flex 在没有显示器的服务器上运行时要设置的标志-->
+      <!-- compiler.headless-server usage:
+      <headless-server>boolean</headless-server>
+      -->
+      <!-- compiler.include-libraries: 要完全包括在 SWF 中的库 (SWC) 列表-->
+      <!-- compiler.include-libraries usage:
+      <include-libraries>
+         <library>string</library>
+         <library>string</library>
+      </include-libraries>
+      -->
+      <!-- compiler.incremental: 启用增量编译-->
+      <!-- compiler.incremental usage:
+      <incremental>boolean</incremental>
+      -->
+      <!-- compiler.isolate-styles: 使已编译的应用程序或模块可以设置仅影响其自身和其子代的样式-->
+      <!-- compiler.isolate-styles usage:
+      <isolate-styles>boolean</isolate-styles>
+      -->
+      <!-- compiler.keep-all-type-selectors: 停用删除未使用的 CSS 类型选择器-->
+      <!-- compiler.keep-all-type-selectors usage:
+      <keep-all-type-selectors>boolean</keep-all-type-selectors>
+      -->
+      <!-- compiler.keep-as3-metadata: 在 SWF 中保留指定的元数据-->
+      <!-- compiler.keep-as3-metadata usage:
+      <keep-as3-metadata>
+         <name>string</name>
+         <name>string</name>
+      </keep-as3-metadata>
+      -->
+      <!-- compiler.keep-generated-actionscript: 保存在 MXML 编译期间生成的临时源文件-->
+      <keep-generated-actionscript>false</keep-generated-actionscript>
+      <!-- compiler.library-path: SWC 文件或包含 SWC 文件的目录的列表-->
+      <library-path>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\authoringsupport.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\flash-integration.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\locale\{locale}</path-element>
+         <path-element>D:\workspace\player\disk-player\DiskPlayer\libs\OSMF.swc</path-element>
+      </library-path>
+      <!-- compiler.locale: 指定国际化的区域-->
+      <locale>
+         <locale-element>en_US</locale-element>
+      </locale>
+      <!-- compiler.minimum-supported-version usage:
+      <minimum-supported-version>string</minimum-supported-version>
+      -->
+      <!-- compiler.mobile: 指定目标运行时为手机设备-->
+      <mobile>false</mobile>
+      <mxml>
+         <!-- compiler.mxml.compatibility-version: 指定兼容性版本，例如 -compatibility-version=2.0.1-->
+         <!-- compiler.mxml.compatibility-version usage:
+         <compatibility-version>version</compatibility-version>
+         -->
+         <!-- compiler.mxml.minimum-supported-version usage:
+         <minimum-supported-version>string</minimum-supported-version>
+         -->
+         <!-- compiler.mxml.qualified-type-selectors usage:
+         <qualified-type-selectors>boolean</qualified-type-selectors>
+         -->
+      </mxml>
+      <namespaces>
+         <!-- compiler.namespaces.namespace: 指定要与用作 MXML 元素的组件的清单关联的 URI-->
+         <namespace>
+            <uri>http://ns.adobe.com/mxml/2009</uri>
+            <manifest>mxml-2009-manifest.xml</manifest>
+         </namespace>
+         <namespace>
+            <uri>library://ns.adobe.com/flex/spark</uri>
+            <manifest>spark-manifest.xml</manifest>
+         </namespace>
+         <namespace>
+            <uri>library://ns.adobe.com/flex/mx</uri>
+            <manifest>mx-manifest.xml</manifest>
+         </namespace>
+         <namespace>
+            <uri>http://www.adobe.com/2006/mxml</uri>
+            <manifest>mxml-manifest.xml</manifest>
+         </namespace>
+      </namespaces>
+      <!-- compiler.omit-trace-statements: 切换是否忽略 trace 语句-->
+      <omit-trace-statements>true</omit-trace-statements>
+      <!-- compiler.optimize: 启用链接后 SWF 优化-->
+      <optimize>true</optimize>
+      <!-- compiler.preloader: 指定应用程序预加载器属性的默认值。如果未指定，则默认的预加载器值为 mx.preloaders.SparkDownloadProgressBar（-compatibility-version >= 4.0 时）和 mx.preloaders.DownloadProgressBar（-compatibility-version < 4.0 时）。-->
+      <!-- compiler.preloader usage:
+      <preloader>string</preloader>
+      -->
+      <!-- compiler.report-invalid-styles-as-warnings: 将无效样式报告为警告-->
+      <!-- compiler.report-invalid-styles-as-warnings usage:
+      <report-invalid-styles-as-warnings>boolean</report-invalid-styles-as-warnings>
+      -->
+      <!-- compiler.report-missing-required-skin-parts-as-warnings: 使用此选项可在检测到缺少所需的外观部件时生成警告，而不是生成错误。-->
+      <!-- compiler.report-missing-required-skin-parts-as-warnings usage:
+      <report-missing-required-skin-parts-as-warnings>boolean</report-missing-required-skin-parts-as-warnings>
+      -->
+      <!-- compiler.services: 到 Flex Data Services 配置文件的路径-->
+      <!-- compiler.services usage:
+      <services>filename</services>
+      -->
+      <!-- compiler.show-actionscript-warnings: 在检测合法但可能不正确的代码的模式下运行 AS3 编译器-->
+      <show-actionscript-warnings>true</show-actionscript-warnings>
+      <!-- compiler.show-binding-warnings: 切换是否显示数据绑定代码生成的警告-->
+      <show-binding-warnings>true</show-binding-warnings>
+      <!-- compiler.show-invalid-css-property-warnings: 切换是否报告无效 css 属性警告-->
+      <!-- compiler.show-invalid-css-property-warnings usage:
+      <show-invalid-css-property-warnings>boolean</show-invalid-css-property-warnings>
+      -->
+      <!-- compiler.show-shadowed-device-font-warnings: 切换是否在嵌入字体名称覆盖设备字体名称时显示警告-->
+      <show-shadowed-device-font-warnings>false</show-shadowed-device-font-warnings>
+      <!-- compiler.show-unused-type-selector-warnings: 切换是否显示未使用的 CSS 类型选择器生成的警告-->
+      <show-unused-type-selector-warnings>true</show-unused-type-selector-warnings>
+      <!-- compiler.source-path: 构成 ActionScript 类层次根的路径元素列表-->
+      <source-path>
+         <path-element>D:\workspace\player\disk-player\HLSPlugin\src</path-element>
+         <path-element>D:\workspace\player\disk-player\HLSPlugin\src</path-element>
+      </source-path>
+      <!-- compiler.strict: 在严格检查错误的模式下运行 AS3 编译器。-->
+      <strict>true</strict>
+      <!-- compiler.theme: 要应用为主题的 CSS 或 SWC 文件的列表-->
+      <theme>
+         <filename>themes/Spark/spark.css</filename>
+      </theme>
+      <!-- compiler.use-resource-bundle-metadata: 确定是否在应用程序中包含资源束。-->
+      <use-resource-bundle-metadata>false</use-resource-bundle-metadata>
+      <!-- compiler.verbose-stacktraces: 将调用堆栈信息保存为 SWF 以供调试-->
+      <verbose-stacktraces>false</verbose-stacktraces>
+      <!-- compiler.warn-array-tostring-changes: Array.toString() 格式已更改。-->
+      <warn-array-tostring-changes>false</warn-array-tostring-changes>
+      <!-- compiler.warn-assignment-within-conditional: 在条件内的指定。-->
+      <warn-assignment-within-conditional>true</warn-assignment-within-conditional>
+      <!-- compiler.warn-bad-array-cast: 数组计算操作可能无效。-->
+      <warn-bad-array-cast>true</warn-bad-array-cast>
+      <!-- compiler.warn-bad-bool-assignment: 在应使用布尔值的地方使用了非布尔值。-->
+      <warn-bad-bool-assignment>true</warn-bad-bool-assignment>
+      <!-- compiler.warn-bad-date-cast: Date 转换操作无效。-->
+      <warn-bad-date-cast>true</warn-bad-date-cast>
+      <!-- compiler.warn-bad-es3-type-method: 方法未知。-->
+      <warn-bad-es3-type-method>true</warn-bad-es3-type-method>
+      <!-- compiler.warn-bad-es3-type-prop: 属性未知。-->
+      <warn-bad-es3-type-prop>true</warn-bad-es3-type-prop>
+      <!-- compiler.warn-bad-nan-comparison: 与 NaN 比较无意义。任何涉及到 NaN 的比较运算结果都将为 false，因为 NaN != NaN。-->
+      <warn-bad-nan-comparison>true</warn-bad-nan-comparison>
+      <!-- compiler.warn-bad-null-assignment: 不能指定为 null。-->
+      <warn-bad-null-assignment>true</warn-bad-null-assignment>
+      <!-- compiler.warn-bad-null-comparison: 与 null 比较无意义。-->
+      <warn-bad-null-comparison>true</warn-bad-null-comparison>
+      <!-- compiler.warn-bad-undefined-comparison: 与 undefined 比较无意义。仅无类型变量（或类型为 * 的变量）允许 undefined。-->
+      <warn-bad-undefined-comparison>true</warn-bad-undefined-comparison>
+      <!-- compiler.warn-boolean-constructor-with-no-args: 在 ActionScript 3.0 中，若 Boolean() 不带参数，则会返回 false。在 ActionScript 2.0 中，Boolean() 会返回 undefined。-->
+      <warn-boolean-constructor-with-no-args>false</warn-boolean-constructor-with-no-args>
+      <!-- compiler.warn-changes-in-resolve: __resolve 不再受支持。-->
+      <warn-changes-in-resolve>false</warn-changes-in-resolve>
+      <!-- compiler.warn-class-is-sealed: 类已封装。无法动态向其添加成员。-->
+      <warn-class-is-sealed>true</warn-class-is-sealed>
+      <!-- compiler.warn-const-not-initialized: 未初始化常量。-->
+      <warn-const-not-initialized>true</warn-const-not-initialized>
+      <!-- compiler.warn-constructor-returns-value: 在新表达式中使用的函数返回一个值。结果将是函数返回的值，而不是该函数的新实例。-->
+      <warn-constructor-returns-value>false</warn-constructor-returns-value>
+      <!-- compiler.warn-deprecated-event-handler-error: EventHandler 未作为侦听器添加。-->
+      <warn-deprecated-event-handler-error>false</warn-deprecated-event-handler-error>
+      <!-- compiler.warn-deprecated-function-error: 不支持的 ActionScript 2.0 函数。-->
+      <warn-deprecated-function-error>true</warn-deprecated-function-error>
+      <!-- compiler.warn-deprecated-property-error: 不支持的 ActionScript 2.0 属性。-->
+      <warn-deprecated-property-error>true</warn-deprecated-property-error>
+      <!-- compiler.warn-duplicate-argument-names: 多个参数具有相同名称。-->
+      <warn-duplicate-argument-names>true</warn-duplicate-argument-names>
+      <!-- compiler.warn-duplicate-variable-def: 变量定义重复 -->
+      <warn-duplicate-variable-def>true</warn-duplicate-variable-def>
+      <!-- compiler.warn-for-var-in-changes: ActionScript 3.0 将会以随机顺序循环访问“for x in target”语句中的对象属性。-->
+      <warn-for-var-in-changes>false</warn-for-var-in-changes>
+      <!-- compiler.warn-import-hides-class: 导入名称与当前类相同的数据包时，将会隐藏此范围中的该类标识符。-->
+      <warn-import-hides-class>true</warn-import-hides-class>
+      <!-- compiler.warn-instance-of-changes: 使用 instanceof 运算符。-->
+      <warn-instance-of-changes>true</warn-instance-of-changes>
+      <!-- compiler.warn-internal-error: 编译器中的内部错误。-->
+      <warn-internal-error>true</warn-internal-error>
+      <!-- compiler.warn-level-not-supported: _level 不再受支持。有关详细信息，请参见 flash.display 数据包。-->
+      <warn-level-not-supported>true</warn-level-not-supported>
+      <!-- compiler.warn-missing-namespace-decl: 缺少命名空间声明（例如，未将变量定义为公共变量、私有变量等）。-->
+      <warn-missing-namespace-decl>true</warn-missing-namespace-decl>
+      <!-- compiler.warn-negative-uint-literal: 指定为 uint 数据类型时，负值会变成一个较大的正值。-->
+      <warn-negative-uint-literal>true</warn-negative-uint-literal>
+      <!-- compiler.warn-no-constructor: 缺少构造函数。-->
+      <warn-no-constructor>false</warn-no-constructor>
+      <!-- compiler.warn-no-explicit-super-call-in-constructor: 未在构造函数中调用 super() 语句。-->
+      <warn-no-explicit-super-call-in-constructor>false</warn-no-explicit-super-call-in-constructor>
+      <!-- compiler.warn-no-type-decl: 缺少类型声明。-->
+      <warn-no-type-decl>true</warn-no-type-decl>
+      <!-- compiler.warn-number-from-string-changes: 在 ActionScript 3.0 中，忽略空格且 '' 返回 0。在 ActionScript 2.0 中，当参数是 '' 或包含空格时，Number() 返回 NaN。-->
+      <warn-number-from-string-changes>false</warn-number-from-string-changes>
+      <!-- compiler.warn-scoping-change-in-this: this 关键字的范围有变更。从类的实例中提取的类方法总是将 this 解析回该实例。在 ActionScript 2.0 中，根据调用方法的位置来动态查找 this。-->
+      <warn-scoping-change-in-this>false</warn-scoping-change-in-this>
+      <!-- compiler.warn-slow-text-field-addition: 对文本域使用 += 无效。-->
+      <warn-slow-text-field-addition>true</warn-slow-text-field-addition>
+      <!-- compiler.warn-unlikely-function-value: 可能缺少圆括号。-->
+      <warn-unlikely-function-value>true</warn-unlikely-function-value>
+      <!-- compiler.warn-xml-class-has-changed: 可能使用了 ActionScript 2.0 XML 类。-->
+      <warn-xml-class-has-changed>false</warn-xml-class-has-changed>
+   </compiler>
+   <!-- compute-digest: 将摘要写入库的 catalog.xml。如果要在“-runtime-shared-libraries-path”选项中使用库，这是必需的。-->
+   <!-- compute-digest usage:
+   <compute-digest>boolean</compute-digest>
+   -->
+   <!-- debug-password: 要包含在可调试的 SWF 中的口令-->
+   <!-- debug-password usage:
+   <debug-password>string</debug-password>
+   -->
+   <!-- default-background-color: 默认背景颜色（应用程序代码可以重写该值）-->
+   <default-background-color>0xFFFFFF</default-background-color>
+   <!-- default-frame-rate: 要在 SWF 中使用的默认帧频。-->
+   <default-frame-rate>24</default-frame-rate>
+   <!-- default-script-limits: 默认脚本执行限制（root 属性可以重写该值）-->
+   <default-script-limits>
+      <max-recursion-depth>1000</max-recursion-depth>
+      <max-execution-time>60</max-execution-time>
+   </default-script-limits>
+   <!-- default-size: 默认应用程序大小（应用程序中的 root 属性可以重写该值）-->
+   <default-size>
+      <width>500</width>
+      <height>375</height>
+   </default-size>
+   <!-- directory: 将库输出为开放式目录而非 SWC 文件-->
+   <!-- directory usage:
+   <directory>boolean</directory>
+   -->
+   <!-- externs: 构建 SWF 时要从链接中删掉的符号列表-->
+   <!-- externs usage:
+   <externs>
+      <symbol>string</symbol>
+      <symbol>string</symbol>
+   </externs>
+   -->
+   <frames>
+      <!-- frames.frame: 带有将被链接到帧上的类名称序列的 SWF 帧标签。-->
+      <!-- frames.frame usage:
+      <frame>
+         <label>string</label>
+         <classname>string</classname>
+      </frame>
+      -->
+   </frames>
+   <framework>halo</framework>
+   <!-- include-classes: 要包含在输出 SWC 中的类列表-->
+   <!-- include-classes usage:
+   <include-classes>
+      <class>string</class>
+      <class>string</class>
+   </include-classes>
+   -->
+   <!-- include-file: 要包含在输出 SWC 中的命名文件列表-->
+   <!-- include-file usage:
+   <include-file>
+      <name>string</name>
+      <path>string</path>
+      <path>string</path>
+   </include-file>
+   -->
+   <!-- include-inheritance-dependencies-only: 仅包括使用 include-classes 指定的类的继承依赖项-->
+   <!-- include-inheritance-dependencies-only usage:
+   <include-inheritance-dependencies-only>boolean</include-inheritance-dependencies-only>
+   -->
+   <!-- include-lookup-only: 若为 true，则具有 lookupOnly=true 的清单项将包含在 SWC 目录中。默认值为 false。-->
+   <!-- include-lookup-only usage:
+   <include-lookup-only>boolean</include-lookup-only>
+   -->
+   <!-- include-namespaces: 列出的命名空间中的所有类都包含在输出 SWC 中-->
+   <!-- include-namespaces usage:
+   <include-namespaces>
+      <uri>string</uri>
+      <uri>string</uri>
+   </include-namespaces>
+   -->
+   <!-- include-resource-bundles: 要包含在输出 SWC 中的资源束列表-->
+   <!-- include-resource-bundles usage:
+   <include-resource-bundles>
+      <bundle>string</bundle>
+      <bundle>string</bundle>
+   </include-resource-bundles>
+   -->
+   <!-- include-sources: 要包含在输出 SWC 中的目录和源文件列表-->
+   <!-- include-sources usage:
+   <include-sources>
+      <path-element>string</path-element>
+      <path-element>string</path-element>
+   </include-sources>
+   -->
+   <!-- include-stylesheet: 要包含在输出 SWC 中的命名样式表资源列表-->
+   <!-- include-stylesheet usage:
+   <include-stylesheet>
+      <name>string</name>
+      <path>string</path>
+      <path>string</path>
+   </include-stylesheet>
+   -->
+   <!-- includes: 构建 SWF 时总是链接的符号列表-->
+   <!-- includes usage:
+   <includes>
+      <symbol>string</symbol>
+      <symbol>string</symbol>
+   </includes>
+   -->
+   <!-- link-report: 输出所有链接到应用程序的定义的 XML 格式报告。-->
+   <!-- link-report usage:
+   <link-report>filename</link-report>
+   -->
+   <!-- load-config: 加载包含配置选项的文件-->
+   <load-config>${flexlib}/${configname}-config.xml</load-config>
+   <!-- load-externs: XML 文件，其中包含构建 SWF 时，要从链接中删除的 <def>、<pre> 和 <ext> 符号 -->
+   <!-- load-externs usage:
+   <load-externs>filename</load-externs>
+   -->
+   <metadata>
+      <!-- metadata.contributor: 要存储在 SWF 元数据中的参与者的名字-->
+      <!-- metadata.contributor usage:
+      <contributor>name</contributor>
+      -->
+      <!-- metadata.creator: 要存储在 SWF 元数据中的作者的名字-->
+      <creator>unknown</creator>
+      <!-- metadata.date: 要存储在 SWF 元数据中的创建日期-->
+      <!-- metadata.date usage:
+      <date>text</date>
+      -->
+      <!-- metadata.description: 要存储在 SWF 元数据中的默认说明-->
+      <description>http://www.adobe.com/products/flex</description>
+      <!-- metadata.language: 要存储在 SWF 元数据中的语言（例如 EN、FR）-->
+      <language>EN</language>
+      <!-- metadata.localized-description: 要存储在 SWF 元数据中的本地化的 RDF/XMP 说明-->
+      <!-- metadata.localized-description usage:
+      <localized-description>
+         <text>string</text>
+         <lang>string</lang>
+         <lang>string</lang>
+      </localized-description>
+      -->
+      <!-- metadata.localized-title: 要存储在 SWF 元数据中的本地化的 RDF/XMP 标题-->
+      <!-- metadata.localized-title usage:
+      <localized-title>
+         <title>string</title>
+         <lang>string</lang>
+         <lang>string</lang>
+      </localized-title>
+      -->
+      <!-- metadata.publisher: 要存储在 SWF 元数据中的发布人的名字-->
+      <publisher>unknown</publisher>
+      <!-- metadata.title: 要存储在 SWF 元数据中的默认标题-->
+      <title>Adobe Flex 4 Application</title>
+   </metadata>
+   <!-- output: 要创建的 SWF 电影的文件名-->
+   <!-- output usage:
+   <output>filename</output>
+   -->
+   <!-- raw-metadata: 要存储在 SWF 元数据中的 XML 文本（重写 metadata.* 配置）-->
+   <!-- raw-metadata usage:
+   <raw-metadata>text</raw-metadata>
+   -->
+   <!-- remove-unused-rsls: 删除应用程序未使用的 RSL-->
+   <remove-unused-rsls>true</remove-unused-rsls>
+   <!-- resource-bundle-list: 将资源束列表打印到文件，以便输入到 compc 编译器以创建资源束 SWC 文件。-->
+   <!-- resource-bundle-list usage:
+   <resource-bundle-list>filename</resource-bundle-list>
+   -->
+   <!-- runtime-shared-libraries: 要在应用程序启动之前加载的运行时共享库 URL 列表-->
+   <!-- runtime-shared-libraries usage:
+   <runtime-shared-libraries>
+      <url>string</url>
+      <url>string</url>
+   </runtime-shared-libraries>
+   -->
+   <!-- runtime-shared-library-path: 指定链接所依赖的 SWC，以及要加载的 RSL URL（带有可选策略文件 URL 和可选故障转移 URL）-->
+   <!-- runtime-shared-library-path usage:
+   <runtime-shared-library-path>
+      <path-element>string</path-element>
+      <rsl-url>string</rsl-url>
+      <policy-file-url>string</policy-file-url>
+   </runtime-shared-library-path>
+   -->
+   <runtime-shared-library-settings>
+      <!-- runtime-shared-library-settings.application-domain: 重写加载 RSL 的应用程序域。支持的值为“current”、“default”、“parent”或“top-level”。-->
+      <!-- runtime-shared-library-settings.application-domain usage:
+      <application-domain>
+         <path-element>string</path-element>
+         <application-domain-target>string</application-domain-target>
+      </application-domain>
+      -->
+      <!-- runtime-shared-library-settings.force-rsls: 强制加载 RSL，覆盖使用 remove-unused-rsls 选项导致的删除-->
+      <!-- runtime-shared-library-settings.force-rsls usage:
+      <force-rsls>
+         <path-element>string</path-element>
+         <path-element>string</path-element>
+      </force-rsls>
+      -->
+   </runtime-shared-library-settings>
+   <!-- size-report: 输出 XML 格式的报告，其中详细列出了链接至应用程序的所有代码和数据的大小。-->
+   <!-- size-report usage:
+   <size-report>filename</size-report>
+   -->
+   <!-- static-link-runtime-shared-libraries: 静态链接由“-runtime-shared-libraries-path”选项指定的库。-->
+   <static-link-runtime-shared-libraries>false</static-link-runtime-shared-libraries>
+   <!-- swf-version: 指定编译的 SWF 文件版本。-->
+   <swf-version>14</swf-version>
+   <!-- target-player: 指定应用程序所针对的播放器版本。需要更高版本的功能将不会编译到应用程序中。支持的最小值是“9.0.0”。-->
+   <target-player>11.1.0</target-player>
+   <!-- tools-locale: 指定编译器在报告错误和警告时使用的区域设置。-->
+   <!-- tools-locale usage:
+   <tools-locale>string</tools-locale>
+   -->
+   <!-- use-direct-blit: 使用硬件加速来将图形传送到可以加速的屏幕中。-->
+   <!-- use-direct-blit usage:
+   <use-direct-blit>boolean</use-direct-blit>
+   -->
+   <!-- use-gpu: 在可以加速的情况下绘制图形时，使用 GPU 合成功能。-->
+   <!-- use-gpu usage:
+   <use-gpu>boolean</use-gpu>
+   -->
+   <!-- use-network: 切换是否将 SWF 标记为可以访问网络资源-->
+   <use-network>true</use-network>
+   <!-- verify-digests: 验证运行时加载的库是否正确。-->
+   <verify-digests>true</verify-digests>
+   <!-- version: 显示程序的内部版本号-->
+   <!-- version usage:
+   <version>boolean</version>
+   -->
+   <!-- warnings: 切换显示/不显示警告-->
+   <!-- warnings usage:
+   <warnings>boolean</warnings>
+   -->
+</flex-config>
