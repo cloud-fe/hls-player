@@ -288,7 +288,7 @@
 			setTimeoutId = setTimeout(hideControlBar,2500);
 		}
 		public function showControlBar():void {
-			setTimeout(function(){PlayerUI.controlContainerVisible = true;},2000);
+			PlayerUI.controlContainerVisible = true;
 			Tweener.removeTweens(controlContainer,['y']);
 			Tweener.removeTweens(subTitleBar,['y']);
 			Tweener.addTween(controlContainer,{y:stage.stageHeight - controlContainer.height,time:2, onUpdate: function():void {
@@ -326,6 +326,7 @@
 			cm.hideBuiltInItems();
 			cm.customItems.push(new ContextMenuItem(PlayerUI.APPNAME));
 			
+			/*
 			item = new ContextMenuItem("亮度增强-低");
 			item.separatorBefore=true;
 			item.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,onMenuSelectEvent);
@@ -342,6 +343,7 @@
 			item = new ContextMenuItem("取消亮度增强");
 			item.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT,onMenuSelectEvent);
 			cm.customItems.push(item);
+			*/
 			
 			item = new ContextMenuItem(PlayerUI.VERSION);
 			item.separatorBefore=true;

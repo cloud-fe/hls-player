@@ -415,6 +415,10 @@
 							pauseBtn.hide();
 							seek(0);
 							pause();
+							//cancel full screen
+							if(stage.displayState == StageDisplayState.FULL_SCREEN) {
+								stage.displayState = StageDisplayState.NORMAL;
+							}
 						}
 					}
 					break;

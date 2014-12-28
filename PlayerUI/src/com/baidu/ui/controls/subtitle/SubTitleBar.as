@@ -41,7 +41,7 @@
 				mcSrtTxt.htmlText = text;
 				mcSrtTxt.setTextFormat(textFormat);
 				//FIXME: /r/n出现空行，导致中英文字幕不出现的问题
-				mcSrtTxt.htmlText = mcSrtTxt.htmlText.replace('<FONT FACE="黑体" SIZE="18" COLOR="#FFFFFF" LETTERSPACING="0" KERNING="0"></FONT></P><P ALIGN="CENTER">', '');
+				mcSrtTxt.htmlText = mcSrtTxt.htmlText.replace('<P ALIGN="CENTER"><FONT FACE="黑体" SIZE="'+ textFormat.size +'" COLOR="#FFFFFF" LETTERSPACING="0" KERNING="0"></FONT></P>', '');
 				
 				trace(mcSrtTxt.htmlText);
 			}

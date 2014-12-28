@@ -139,11 +139,11 @@ package com.baidu.config
 			config.SetShowSearch(info.showSearch);
 			
 			//callbacks
-			config.SetOnPlayOverFunc(info.onPlayerOver);
-			config.SetOnPlayerErrorFunc(info.onPlayerErrorFunc);
-			config.SetOnReadyFunc(info.onReadyFunc);
-			config.SetOnTimeFunc(info.onTimeFunc);
-			config.SetOnLoadFunc(info.onLoadFunc);
+			config.SetOnPlayOverFunc(info.onOver);
+			config.SetOnPlayerErrorFunc(info.onError);
+			config.SetOnReadyFunc(info.onReady);
+			config.SetOnTimeFunc(info.onTime);
+			config.SetOnLoadFunc(info.onLoad);
 			return config;
 		}
 	}

@@ -61,7 +61,7 @@
       </extensions>
       <!-- compiler.external-library-path: 要进行编译但忽略链接的 SWC 文件或目录列表-->
       <external-library-path>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\player\11.1\playerglobal.swc</path-element>
+         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\player\11.0\playerglobal.swc</path-element>
          <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\framework.swc</path-element>
          <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\textLayout.swc</path-element>
          <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\spark.swc</path-element>
@@ -508,9 +508,9 @@
    <!-- static-link-runtime-shared-libraries: 静态链接由“-runtime-shared-libraries-path”选项指定的库。-->
    <static-link-runtime-shared-libraries>false</static-link-runtime-shared-libraries>
    <!-- swf-version: 指定编译的 SWF 文件版本。-->
-   <swf-version>14</swf-version>
+   <swf-version>11</swf-version>
    <!-- target-player: 指定应用程序所针对的播放器版本。需要更高版本的功能将不会编译到应用程序中。支持的最小值是“9.0.0”。-->
-   <target-player>11.1.0</target-player>
+   <target-player>11.0.0</target-player>
    <!-- tools-locale: 指定编译器在报告错误和警告时使用的区域设置。-->
    <!-- tools-locale usage:
    <tools-locale>string</tools-locale>
@@ -526,7 +526,7 @@
    <!-- use-network: 切换是否将 SWF 标记为可以访问网络资源-->
    <use-network>true</use-network>
    <!-- verify-digests: 验证运行时加载的库是否正确。-->
-   <verify-digests>true</verify-digests>
+   <verify-digests>false</verify-digests>
    <!-- version: 显示程序的内部版本号-->
    <!-- version usage:
    <version>boolean</version>
