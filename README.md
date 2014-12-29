@@ -7,9 +7,6 @@ support： *.m3u8
 
 Demo  /PlayerAPI/index.html
 
-
-<script type="text/javascript" src="./playerAPI.js"></script>
-<script type="text/javascript">
 var player = diskPlayer({
     //容器id
     containerId: 'container',
@@ -39,4 +36,3 @@ player.onLoad(function() {
 player.onOver(function() {
     console.log('onOver， 播放结束');
 });
-</script>
