@@ -21,7 +21,7 @@ this project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin]
 - import api file: /PlayerAPI/playerAPI.js
 
 ```html
-<script type="text/javascript" src="./playerAPI.js"></script>
+    <script type="text/javascript" src="./playerAPI.js"></script>
 ```
 - init player
 
