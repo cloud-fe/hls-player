@@ -7,6 +7,10 @@ this project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin]
 
 - support： *.m3u8
 
+- support platform：win/mac/ipad/iphone (android？)
+- support browser： ie6+/chrome/safari/firefox
+- flash version： > 10.1
+
 ##### How To Use
 
 - build a container for player
@@ -14,7 +18,11 @@ this project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin]
 ```html
     <div id="container"></div>
 ```
-- import javascript file: /PlayerAPI/playerAPI.js
+- import api file: /PlayerAPI/playerAPI.js
+
+```html
+<script type="text/javascript" src="./playerAPI.js"></script>
+```
 - init player
 
 ```javascript
@@ -153,3 +161,8 @@ player callback list:
 
 - [osmf] (http://blogs.adobe.com/osmf/)
 - [osmf-hls-plugin] (https://github.com/denivip/osmf-hls-plugin)
+
+##### Todo List
+
+- 修复在ipad/iphone 端的接口和以上接口保持一致
+- 添加 autostart 参数
