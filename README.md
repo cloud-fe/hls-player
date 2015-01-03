@@ -3,7 +3,7 @@ hls-player
 
 HLS：（HTTP Live Streaming）
 
-this project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin](https://github.com/denivip/osmf-hls-plugin)，is used to playback Apple HLS video streams in Flash video player. 
+This project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin](https://github.com/denivip/osmf-hls-plugin)，is used to playback Apple HLS video streams in Flash video player. 
 
 - support： *.m3u8
 - platform：win/mac/ipad/iphone (android？)
