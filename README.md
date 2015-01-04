@@ -12,12 +12,12 @@ This project based on [osmf](http://blogs.adobe.com/osmf/) and [osmf-hls-plugin]
 
 ##### How To Use
 
-- build a container for player
+- build a container
 
 ```html
     <div id="container"></div>
 ```
-- import api file: /PlayerAPI/playerAPI.js
+- import api file:  /PlayerAPI/playerAPI.js
 
 ```html
     <script type="text/javascript" src="./playerAPI.js"></script>
