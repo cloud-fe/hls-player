@@ -73,6 +73,7 @@ package org.denivip.osmf.net.httpstreaming.hls
 		 */
 		public function HTTPHLSStreamSource(factory:HTTPStreamingFactory, resource:MediaResourceBase, dispatcher:IEventDispatcher)
 		{
+			
 			if (dispatcher == null || factory == null || resource == null)
 			{
 				throw new ArgumentError(OSMFStrings.getString(OSMFStrings.INVALID_PARAM) + " - HTTPHLSStreamSource");
@@ -758,6 +759,10 @@ package org.denivip.osmf.net.httpstreaming.hls
 			if (_currentIndexDownloadEvent == null)
 			{
 				_currentIndexDownloadEvent = event;
+				var url:String = _currentIndexDownloadEvent.request.url; 
+				url = url.replace(/(?:^|\\?|#|&)t=([^&#]*)(?:$|&|#)/i, '');
+				url = url + ((url.indexOf('?') > 0) ? '&' : '?') + 't=' + Math.random(); 
+				_currentIndexDownloadEvent.request.url = url;
 				_indexDownloader.open(_currentIndexDownloadEvent.request, _indexDownloaderMonitor, OSMFSettings.hdsIndexDownloadTimeout);
 			}
 		}

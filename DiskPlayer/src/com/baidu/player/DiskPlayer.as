@@ -99,6 +99,8 @@
 				PlayerUI.FILENAME = loaderParams.filename == 'null' ? '' : loaderParams.filename;
 				PlayerUI.ShowSubSearchPanel = config.GetShowSearch() == '1' ? true : false;
 			} else {
+				config = new PlayerConfig();
+				//config.SetFile("http://zq.baidu.com:8080/static/video.m3u8");
 			}
 			//call onload method
 			if (config.GetOnLoadFunc()) {
@@ -129,6 +131,8 @@
 			player.addEventListener(TimeEvent.DURATION_CHANGE, onPlaybackChange);
 			player.addEventListener(MediaPlayerStateChangeEvent.MEDIA_PLAYER_STATE_CHANGE, onMediaLoadStateChange);
 			player.addEventListener(LoadEvent.LOAD_STATE_CHANGE, onLoadStateChange);
+			
+			
 			container = new MediaContainer();
 			initPlayer(this.width, this.height, container);
 			
@@ -136,9 +140,10 @@
 			resetPlayerConfig();
 		}
 		
-		private function loadPlayerMedia():void {
+		private function loadPlayerMedia(flagReload:Boolean=false):void {
 			unloadResource();
-			createResource(config.GetFile());
+			var fileUrl:String = config.GetFile() + (flagReload ? ('&t=' + Math.random()) : ''); 
+			createResource(fileUrl);
 			resizeVideoContainer();
 		}
 		private function reloadPlayerMedia():void {
@@ -147,7 +152,7 @@
 			flagIsLiving = false;
 			flagReloadSeek = false;
 			flagIsReload = true;
-			loadPlayerMedia();
+			loadPlayerMedia(true);
 		}
 		private function unloadResource():void
 		{
@@ -302,9 +307,8 @@
 			}
 		}
 		private function callErrorFunc(obj:Object):void {
-			
-			if (obj != null && obj.islive) {
-				flagIsLiving = true;
+			if (obj && typeof obj.islive == 'boolean') {
+				flagIsLiving = obj.islive;
 				return;
 			}
 			if (obj != null && obj.analytics) {
@@ -312,13 +316,13 @@
 			}
 			if (obj == null || (obj && obj.httpstatus && obj.httpstatus != 404)) {
 				retryCount ++;
-				if (retryCount > 3) {
+				if (retryCount > 4) {
 					callBrowserError(obj);
 				} else {
 					clearTimeout(retryTimerId);
 					retryTimerId = setTimeout(function():void {
 						loadPlayerMedia();
-					}, 2000);
+					}, 3000);
 				}
 			} else {
 				callBrowserError(obj);
@@ -335,11 +339,16 @@
 						bufferStartTime = getTimer();
 						boolChangeBufferTime = true;
 					}
+					
 					loading.show();
 					playBtn.hide();
 					bigPlayBtn.hide();
 					bigPauseBtn.hide();
 					pauseBtn.show();
+					if (flagIsLiving && (getDuration() - getPosition()) < 5) {
+						PlayerUI.showLoadingTips('视频正在转码，播放过程中可能稍有卡顿', 5000);
+					}
+					
 					break;
 				case MediaPlayerState.PLAYBACK_ERROR :
 					callErrorFunc(null);
@@ -392,34 +401,38 @@
 						play();
 					}else {
 						if (config.GetOnPlayOverFunc()) {
-							if (!flagIsLiving) {
+//							if (!flagIsLiving) {
 								ExternalInterface.call(config.GetOnPlayOverFunc());
-							} else {
-								PlayerUI.showLoadingTips('视频正在转码，播放过程中可能稍有卡顿', 3000);
-							}
+//							} else {
+//								PlayerUI.showLoadingTips('视频正在转码，播放过程中可能稍有卡顿', 3000);
+//							}
 						}
 						
-						if (flagIsLiving) {
-							loading.show();
-							playBtn.hide();
-							bigPlayBtn.hide();
-							bigPauseBtn.hide();
-							pauseBtn.show();
-							lastPosition = getPosition() - 2;
-							reloadPlayerMedia();
-						} else {
+//						if (flagIsLiving) {
+//							loading.show();
+//							playBtn.hide();
+//							bigPlayBtn.hide();
+//							bigPauseBtn.hide();
+//							pauseBtn.show();
+//							lastPosition = getPosition() - 2;
+//							reloadPlayerMedia();
+//						} else {
+						
+							player.stop();
+							
 							loading.hide();
 							playBtn.show();
 							bigPlayBtn.show();
 							bigPauseBtn.hide();
 							pauseBtn.hide();
-							seek(0);
-							pause();
+							pBar.cursor = 0;
+							//seek(0);
+							//pause();
 							//cancel full screen
 							if(stage.displayState == StageDisplayState.FULL_SCREEN) {
 								stage.displayState = StageDisplayState.NORMAL;
 							}
-						}
+						//}
 					}
 					break;
 			}

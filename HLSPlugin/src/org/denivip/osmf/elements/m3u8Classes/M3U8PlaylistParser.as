@@ -45,16 +45,13 @@ package org.denivip.osmf.elements.m3u8Classes
 				throw new ArgumentError("Parsed value is missing =(");
 			}
 			
-			var lines:Array = value.split(/\r?\n/),
-				resultObj:Object;
+			var lines:Array = value.split(/\r?\n/);
 			
 			if(lines[0] != '#EXTM3U'){
 				CONFIG::LOGGING
 				{
 					logger.warn('Incorrect header! {0}', lines[0]);
 				}
-				var obj:Object = JSON.parse(value);
-				errorFunc(obj);
 				return false;
 			}
 			
@@ -74,14 +71,12 @@ package org.denivip.osmf.elements.m3u8Classes
 					tempStreamingRes = result as StreamingURLResource;
 					
 					if(tempStreamingRes && tempStreamingRes.streamType == StreamType.LIVE_OR_RECORDED){
-
-						//FIX by zhangqian08  暫時去掉檢測是否是 islive， 都作为转完的处理
-						//						for(var j:int = i+1; j < lines.length; j++){
-//							if(String(lines[j]).indexOf('#EXT-X-ENDLIST') == 0){
-//								isLive = false;
-//								break;
-//							}
-//						}
+						for(var j:int = i+1; j < lines.length; j++){
+							if(String(lines[j]).indexOf('#EXT-X-ENDLIST') == 0){
+								isLive = false;
+								break;
+							}
+						}
 						if(isLive)
 							tempStreamingRes.streamType = isDVR ? StreamType.DVR : StreamType.LIVE;
 					}

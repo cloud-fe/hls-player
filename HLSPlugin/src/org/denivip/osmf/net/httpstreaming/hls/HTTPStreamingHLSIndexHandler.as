@@ -52,6 +52,7 @@
 	[Event(name="DVRStreamInfo", type="org.osmf.events.DVRStreamInfoEvent")]
 	
 	import org.denivip.osmf.events.HTTPHLSStreamingEvent;
+
 	/**
 	 * 
 	 */
@@ -297,10 +298,9 @@
 					}
 				}
 				
-				if (rateItem.isLive == true) {
-					errorFunc({islive: true});
-				}
-				rateItem.isLive = false;
+				errorFunc({islive: rateItem.isLive});
+				
+//				rateItem.isLive = false;
 				rateItem.isParsed = true;
 				if(_DVR){
 					if(isNaN(_dvrStartTime))
@@ -321,11 +321,11 @@
 				
 				_rateVec[quality] = rateItem;
 				generateIndexReadyForQuality(quality);
-				
-				if(rateItem.isLive){
+				// fix by zhangqian08 修复直播的情况  也通知 duration
+				//if(rateItem.isLive){
 					notifyTotalDuration(rateItem.totalTime, rateItem.isLive);
 					_quality = quality;
-				}				
+				//}
 			}
 		}
 		
@@ -369,6 +369,7 @@
 			return getNextFile(quality);
 		}
 		
+		private var requestRertyCount:int = 0;
 		override public function getNextFile(quality:int):HTTPStreamRequest{
 			var request:HTTPStreamRequest = checkRateAvilable(quality);
 			if(request)
@@ -401,7 +402,13 @@
 					{
 						_reloadTime = getTimer();
 					}
-					dispatchEvent(new HTTPStreamingIndexHandlerEvent(HTTPStreamingIndexHandlerEvent.REQUEST_LOAD_INDEX, false, false, item.isLive, 0, _streamNames, _streamQualityRates, new URLRequest(_rateVec[quality].url), quality, false));						
+					if (requestRertyCount === 0) {
+						dispatchEvent(new HTTPStreamingIndexHandlerEvent(HTTPStreamingIndexHandlerEvent.REQUEST_LOAD_INDEX, false, false, item.isLive, 0, _streamNames, _streamQualityRates, new URLRequest(_rateVec[quality].url), quality, false));
+					}
+					requestRertyCount++;
+					if (requestRertyCount > 3) {
+						requestRertyCount = 0;
+					}
 					return new HTTPStreamRequest(HTTPStreamRequestKind.LIVE_STALL, null, 1.0);
 				}
 			}
@@ -555,8 +562,9 @@
 		private function notifyTotalDuration(duration:Number, live:Boolean):void{
 			var sdo:FLVTagScriptDataObject = new FLVTagScriptDataObject();
 			var metaInfo:Object = {};
-            metaInfo.duration = live ? 0 : duration;
-			
+			//fix by zhangqian08 修复直播模式下没有 duration 情况
+            //metaInfo.duration = live ? 0 : duration;
+			metaInfo.duration = duration || 0;
 			sdo.objects = ["onMetaData", metaInfo];
 			dispatchEvent(
 				new HTTPStreamingEvent(

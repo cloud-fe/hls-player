@@ -1,27 +1,27 @@
 <flex-config>
-   <!-- benchmark:  ‰≥ˆ–‘ƒ‹ª˘◊º-->
+   <!-- benchmark: ËæìÂá∫ÊÄßËÉΩÂü∫ÂáÜ-->
    <!-- benchmark usage:
    <benchmark>boolean</benchmark>
    -->
    <compiler>
-      <!-- compiler.accessible: …˙≥…ø…∑√Œ µƒ SWF-->
+      <!-- compiler.accessible: ÁîüÊàêÂèØËÆøÈóÆÁöÑ SWF-->
       <accessible>false</accessible>
-      <!-- compiler.actionscript-file-encoding: ÷∏∂® Actionscript Œƒº˛±‡¬Î°£»Áπ˚ AS3 ‘¥Œƒº˛÷–√ª”– BOM£¨‘Ú±‡“Î∆˜Ω´ π”√¥ÀŒƒº˛±‡¬Î°£-->
+      <!-- compiler.actionscript-file-encoding: ÊåáÂÆö Actionscript Êñá‰ª∂ÁºñÁ†Å„ÄÇÂ¶ÇÊûú AS3 Ê∫êÊñá‰ª∂‰∏≠Ê≤°Êúâ BOMÔºåÂàôÁºñËØëÂô®Â∞Ü‰ΩøÁî®Ê≠§Êñá‰ª∂ÁºñÁ†Å„ÄÇ-->
       <!-- compiler.actionscript-file-encoding usage:
       <actionscript-file-encoding>string</actionscript-file-encoding>
       -->
-      <!-- compiler.allow-source-path-overlap: ºÏ≤È‘¥¬∑æ∂Ãıƒø «∑Ò «∆‰À¸‘¥¬∑æ∂Ãıƒøµƒ◊”ƒø¬º°£’‚”–÷˙”⁄√˜»∑ MXML ◊Èº˛µƒ ˝æ›∞¸√˚≥∆°£-->
+      <!-- compiler.allow-source-path-overlap: Ê£ÄÊü•Ê∫êË∑ØÂæÑÊù°ÁõÆÊòØÂê¶ÊòØÂÖ∂ÂÆÉÊ∫êË∑ØÂæÑÊù°ÁõÆÁöÑÂ≠êÁõÆÂΩï„ÄÇËøôÊúâÂä©‰∫éÊòéÁ°Æ MXML ÁªÑ‰ª∂ÁöÑÊï∞ÊçÆÂåÖÂêçÁß∞„ÄÇ-->
       <allow-source-path-overlap>false</allow-source-path-overlap>
-      <!-- compiler.as3:  π”√ª˘”⁄ ActionScript 3 ¿‡µƒ∂‘œÛƒ£–Õø…“‘ªÒµ√∏¸∏ﬂµƒ–‘ƒ‹∫Õ∏¸≥ˆ…´µƒ¥ÌŒÛ±®∏Êπ¶ƒ‹°£‘⁄ª˘”⁄¿‡µƒ∂‘œÛƒ£–Õ÷–£¨¥Û∂‡ ˝ƒ⁄÷√∫Ø ˝ «◊˜Œ™¿‡µƒπÃ∂®∑Ω∑®÷¥––µƒ°£-->
+      <!-- compiler.as3: ‰ΩøÁî®Âü∫‰∫é ActionScript 3 Á±ªÁöÑÂØπË±°Ê®°ÂûãÂèØ‰ª•Ëé∑ÂæóÊõ¥È´òÁöÑÊÄßËÉΩÂíåÊõ¥Âá∫Ëâ≤ÁöÑÈîôËØØÊä•ÂëäÂäüËÉΩ„ÄÇÂú®Âü∫‰∫éÁ±ªÁöÑÂØπË±°Ê®°Âûã‰∏≠ÔºåÂ§ßÂ§öÊï∞ÂÜÖÁΩÆÂáΩÊï∞ÊòØ‰Ωú‰∏∫Á±ªÁöÑÂõ∫ÂÆöÊñπÊ≥ïÊâßË°åÁöÑ„ÄÇ-->
       <as3>true</as3>
       <!-- compiler.compress usage:
       <compress>boolean</compress>
       -->
-      <!-- compiler.context-root: ”√”⁄ÃÊªª∑˛ŒÒÕ®µ¿∂Àµ„µƒ {context.root} ±Íº«µƒ¬∑æ∂-->
+      <!-- compiler.context-root: Áî®‰∫éÊõøÊç¢ÊúçÂä°ÈÄöÈÅìÁ´ØÁÇπÁöÑ {context.root} Ê†áËÆ∞ÁöÑË∑ØÂæÑ-->
       <!-- compiler.context-root usage:
       <context-root>context-path</context-root>
       -->
-      <!-- compiler.debug: …˙≥…  ”⁄Ω¯––µ˜ ‘µƒµÁ”∞-->
+      <!-- compiler.debug: ÁîüÊàêÈÄÇ‰∫éËøõË°åË∞ÉËØïÁöÑÁîµÂΩ±-->
       <debug>true</debug>
       <!-- compiler.defaults-css-files usage:
       <defaults-css-files>
@@ -29,11 +29,11 @@
          <filename>string</filename>
       </defaults-css-files>
       -->
-      <!-- compiler.defaults-css-url: ∂®“Âƒ¨»œ—˘ Ω±ÌµƒŒª÷√°£…Ë÷√¥À—°œÓø…÷ÿ–¥ framework.swc Œƒº˛÷– defaults.css —˘ Ω±Ìµƒ“˛ Ω π”√°£-->
+      <!-- compiler.defaults-css-url: ÂÆö‰πâÈªòËÆ§Ê†∑ÂºèË°®ÁöÑ‰ΩçÁΩÆ„ÄÇËÆæÁΩÆÊ≠§ÈÄâÈ°πÂèØÈáçÂÜô framework.swc Êñá‰ª∂‰∏≠ defaults.css Ê†∑ÂºèË°®ÁöÑÈöêÂºè‰ΩøÁî®„ÄÇ-->
       <!-- compiler.defaults-css-url usage:
       <defaults-css-url>string</defaults-css-url>
       -->
-      <!-- compiler.define: ∂®“Â»´æ÷ AS3 Ãıº˛±‡“Î∂®“Â£¨¿˝»Á -define=CONFIG::debugging,true ªÚ -define+=CONFIG::debugging,true£®“‘◊∑º”µΩ flex-config.xml ÷–µƒœ÷”–∂®“Â£©-->
+      <!-- compiler.define: ÂÆö‰πâÂÖ®Â±Ä AS3 Êù°‰ª∂ÁºñËØëÂÆö‰πâÔºå‰æãÂ¶Ç -define=CONFIG::debugging,true Êàñ -define+=CONFIG::debugging,trueÔºà‰ª•ËøΩÂä†Âà∞ flex-config.xml ‰∏≠ÁöÑÁé∞ÊúâÂÆö‰πâÔºâ-->
       <define>
          <name>CONFIG::LOGGING</name>
          <value>false</value>
@@ -49,7 +49,7 @@
       <!-- compiler.enable-runtime-design-layers usage:
       <enable-runtime-design-layers>boolean</enable-runtime-design-layers>
       -->
-      <!-- compiler.es:  π”√ª˘”⁄ ECMAScript ∞Ê±æ 3 ‘≠–Õµƒ∂‘œÛƒ£–Õ“‘‘ –Ì∂ØÃ¨÷ÿ–¥‘≠–Õ Ù–‘°£‘⁄ª˘”⁄‘≠–Õµƒ∂‘œÛƒ£–Õ÷–£¨ƒ⁄÷√∫Ø ˝ «◊˜Œ™‘≠–Õ∂‘œÛµƒ∂ØÃ¨ Ù–‘÷¥––µƒ°£-->
+      <!-- compiler.es: ‰ΩøÁî®Âü∫‰∫é ECMAScript ÁâàÊú¨ 3 ÂéüÂûãÁöÑÂØπË±°Ê®°Âûã‰ª•ÂÖÅËÆ∏Âä®ÊÄÅÈáçÂÜôÂéüÂûãÂ±ûÊÄß„ÄÇÂú®Âü∫‰∫éÂéüÂûãÁöÑÂØπË±°Ê®°Âûã‰∏≠ÔºåÂÜÖÁΩÆÂáΩÊï∞ÊòØ‰Ωú‰∏∫ÂéüÂûãÂØπË±°ÁöÑÂä®ÊÄÅÂ±ûÊÄßÊâßË°åÁöÑ„ÄÇ-->
       <es>false</es>
       <extensions>
          <!-- compiler.extensions.extension usage:
@@ -59,28 +59,28 @@
          </extension>
          -->
       </extensions>
-      <!-- compiler.external-library-path: “™Ω¯––±‡“Îµ´∫ˆ¬‘¡¥Ω”µƒ SWC Œƒº˛ªÚƒø¬º¡–±Ì-->
+      <!-- compiler.external-library-path: Ë¶ÅËøõË°åÁºñËØë‰ΩÜÂøΩÁï•ÈìæÊé•ÁöÑ SWC Êñá‰ª∂ÊàñÁõÆÂΩïÂàóË°®-->
       <external-library-path>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\player\11.0\playerglobal.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\framework.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\textLayout.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\spark.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\sparkskins.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\rpc.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\charts.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\spark_dmv.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\mx\mx.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\advancedgrids.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/player/11.1/playerglobal.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/framework.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/textLayout.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/spark.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/sparkskins.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/rpc.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/charts.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/spark_dmv.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/mx/mx.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/advancedgrids.swc</path-element>
       </external-library-path>
       <fonts>
-         <!-- compiler.fonts.advanced-anti-aliasing: Œ™«∂»Î◊÷ÃÂ∆Ù”√∏ﬂº∂œ˚≥˝æ‚≥›£¨∏√π¶ƒ‹ø…Œ™–°◊÷ÃÂÃ·π©∏¸∏ﬂµƒ«ÂŒ˙∂»°£-->
+         <!-- compiler.fonts.advanced-anti-aliasing: ‰∏∫ÂµåÂÖ•Â≠ó‰ΩìÂêØÁî®È´òÁ∫ßÊ∂àÈô§ÈîØÈΩøÔºåËØ•ÂäüËÉΩÂèØ‰∏∫Â∞èÂ≠ó‰ΩìÊèê‰æõÊõ¥È´òÁöÑÊ∏ÖÊô∞Â∫¶„ÄÇ-->
          <advanced-anti-aliasing>true</advanced-anti-aliasing>
-         <!-- compiler.fonts.flash-type: Œ™«∂»Î◊÷ÃÂ∆Ù”√ FlashType£¨∏√π¶ƒ‹ø…Œ™–°◊÷ÃÂÃ·π©∏¸∏ﬂµƒ«ÂŒ˙∂»°£-->
+         <!-- compiler.fonts.flash-type: ‰∏∫ÂµåÂÖ•Â≠ó‰ΩìÂêØÁî® FlashTypeÔºåËØ•ÂäüËÉΩÂèØ‰∏∫Â∞èÂ≠ó‰ΩìÊèê‰æõÊõ¥È´òÁöÑÊ∏ÖÊô∞Â∫¶„ÄÇ-->
          <!-- compiler.fonts.flash-type usage:
          <flash-type>boolean</flash-type>
          -->
          <languages>
-            <!-- compiler.fonts.languages.language-range: œﬁ÷∆«∂»Î SWF ÷–µƒ◊÷ÃÂ◊÷–Œ ˝µƒ∑∂Œß-->
+            <!-- compiler.fonts.languages.language-range: ÈôêÂà∂ÂµåÂÖ• SWF ‰∏≠ÁöÑÂ≠ó‰ΩìÂ≠óÂΩ¢Êï∞ÁöÑËåÉÂõ¥-->
             <!-- compiler.fonts.languages.language-range usage:
             <language-range>
                <lang>string</lang>
@@ -95,70 +95,70 @@
             <path-element>string</path-element>
          </local-font-paths>
          -->
-         <!-- compiler.fonts.local-fonts-snapshot: ∞¸∫¨”… flex2.tools.FontSnapshot …˙≥…µƒœµÕ≥◊÷ÃÂ ˝æ›µƒŒƒº˛°£-->
-         <local-fonts-snapshot>${flexlib}/localFonts.ser</local-fonts-snapshot>
-         <!-- compiler.fonts.managers: ±‡“Î∆˜◊÷ÃÂπ‹¿Ì∆˜¿‡£¨“‘≤ﬂ¬‘Ω‚Œˆ≈≈–Ú-->
+         <!-- compiler.fonts.local-fonts-snapshot: ÂåÖÂê´Áî± flex2.tools.FontSnapshot ÁîüÊàêÁöÑÁ≥ªÁªüÂ≠ó‰ΩìÊï∞ÊçÆÁöÑÊñá‰ª∂„ÄÇ-->
+         <local-fonts-snapshot>${flexlib}/macFonts.ser</local-fonts-snapshot>
+         <!-- compiler.fonts.managers: ÁºñËØëÂô®Â≠ó‰ΩìÁÆ°ÁêÜÂô®Á±ªÔºå‰ª•Á≠ñÁï•Ëß£ÊûêÊéíÂ∫è-->
          <managers>
             <manager-class>flash.fonts.JREFontManager</manager-class>
             <manager-class>flash.fonts.BatikFontManager</manager-class>
             <manager-class>flash.fonts.AFEFontManager</manager-class>
             <manager-class>flash.fonts.CFFFontManager</manager-class>
          </managers>
-         <!-- compiler.fonts.max-cached-fonts: …Ë÷√‘⁄∑˛ŒÒ∆˜ª∫¥Ê÷–±£¡Ùµƒ◊÷ÃÂµƒ◊Ó¥Û ˝ƒø°£ƒ¨»œ÷µŒ™ 20°£-->
+         <!-- compiler.fonts.max-cached-fonts: ËÆæÁΩÆÂú®ÊúçÂä°Âô®ÁºìÂ≠ò‰∏≠‰øùÁïôÁöÑÂ≠ó‰ΩìÁöÑÊúÄÂ§ßÊï∞ÁõÆ„ÄÇÈªòËÆ§ÂÄº‰∏∫ 20„ÄÇ-->
          <max-cached-fonts>20</max-cached-fonts>
-         <!-- compiler.fonts.max-glyphs-per-face: …Ë÷√‘⁄∑˛ŒÒ∆˜ª∫¥Ê÷–Œ™√ø÷÷◊÷ÃÂ±£¡Ùµƒ◊÷∑˚◊÷–Œ¬÷¿™µƒ◊Ó¥Û ˝ƒø°£ƒ¨»œ÷µŒ™ 1000°£-->
+         <!-- compiler.fonts.max-glyphs-per-face: ËÆæÁΩÆÂú®ÊúçÂä°Âô®ÁºìÂ≠ò‰∏≠‰∏∫ÊØèÁßçÂ≠ó‰Ωì‰øùÁïôÁöÑÂ≠óÁ¨¶Â≠óÂΩ¢ËΩÆÂªìÁöÑÊúÄÂ§ßÊï∞ÁõÆ„ÄÇÈªòËÆ§ÂÄº‰∏∫ 1000„ÄÇ-->
          <max-glyphs-per-face>1000</max-glyphs-per-face>
       </fonts>
-      <!-- compiler.headless-server: µ± Flex ‘⁄√ª”–œ‘ æ∆˜µƒ∑˛ŒÒ∆˜…œ‘À–– ±“™…Ë÷√µƒ±Í÷æ-->
+      <!-- compiler.headless-server: ÂΩì Flex Âú®Ê≤°ÊúâÊòæÁ§∫Âô®ÁöÑÊúçÂä°Âô®‰∏äËøêË°åÊó∂Ë¶ÅËÆæÁΩÆÁöÑÊ†áÂøó-->
       <!-- compiler.headless-server usage:
       <headless-server>boolean</headless-server>
       -->
-      <!-- compiler.include-libraries: “™ÕÍ»´∞¸¿®‘⁄ SWF ÷–µƒø‚ (SWC) ¡–±Ì-->
+      <!-- compiler.include-libraries: Ë¶ÅÂÆåÂÖ®ÂåÖÊã¨Âú® SWF ‰∏≠ÁöÑÂ∫ì (SWC) ÂàóË°®-->
       <!-- compiler.include-libraries usage:
       <include-libraries>
          <library>string</library>
          <library>string</library>
       </include-libraries>
       -->
-      <!-- compiler.incremental: ∆Ù”√‘ˆ¡ø±‡“Î-->
+      <!-- compiler.incremental: ÂêØÁî®Â¢ûÈáèÁºñËØë-->
       <!-- compiler.incremental usage:
       <incremental>boolean</incremental>
       -->
-      <!-- compiler.isolate-styles:  π“—±‡“Îµƒ”¶”√≥Ã–ÚªÚƒ£øÈø…“‘…Ë÷√Ωˆ”∞œÏ∆‰◊‘…Ì∫Õ∆‰◊”¥˙µƒ—˘ Ω-->
+      <!-- compiler.isolate-styles: ‰ΩøÂ∑≤ÁºñËØëÁöÑÂ∫îÁî®Á®ãÂ∫èÊàñÊ®°ÂùóÂèØ‰ª•ËÆæÁΩÆ‰ªÖÂΩ±ÂìçÂÖ∂Ëá™Ë∫´ÂíåÂÖ∂Â≠ê‰ª£ÁöÑÊ†∑Âºè-->
       <!-- compiler.isolate-styles usage:
       <isolate-styles>boolean</isolate-styles>
       -->
-      <!-- compiler.keep-all-type-selectors: Õ£”√…æ≥˝Œ¥ π”√µƒ CSS ¿‡–Õ—°‘Ò∆˜-->
+      <!-- compiler.keep-all-type-selectors: ÂÅúÁî®Âà†Èô§Êú™‰ΩøÁî®ÁöÑ CSS Á±ªÂûãÈÄâÊã©Âô®-->
       <!-- compiler.keep-all-type-selectors usage:
       <keep-all-type-selectors>boolean</keep-all-type-selectors>
       -->
-      <!-- compiler.keep-as3-metadata: ‘⁄ SWF ÷–±£¡Ù÷∏∂®µƒ‘™ ˝æ›-->
+      <!-- compiler.keep-as3-metadata: Âú® SWF ‰∏≠‰øùÁïôÊåáÂÆöÁöÑÂÖÉÊï∞ÊçÆ-->
       <!-- compiler.keep-as3-metadata usage:
       <keep-as3-metadata>
          <name>string</name>
          <name>string</name>
       </keep-as3-metadata>
       -->
-      <!-- compiler.keep-generated-actionscript: ±£¥Ê‘⁄ MXML ±‡“Î∆⁄º‰…˙≥…µƒ¡Ÿ ±‘¥Œƒº˛-->
+      <!-- compiler.keep-generated-actionscript: ‰øùÂ≠òÂú® MXML ÁºñËØëÊúüÈó¥ÁîüÊàêÁöÑ‰∏¥Êó∂Ê∫êÊñá‰ª∂-->
       <keep-generated-actionscript>false</keep-generated-actionscript>
-      <!-- compiler.library-path: SWC Œƒº˛ªÚ∞¸∫¨ SWC Œƒº˛µƒƒø¬ºµƒ¡–±Ì-->
+      <!-- compiler.library-path: SWC Êñá‰ª∂ÊàñÂåÖÂê´ SWC Êñá‰ª∂ÁöÑÁõÆÂΩïÁöÑÂàóË°®-->
       <library-path>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\authoringsupport.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\libs\flash-integration.swc</path-element>
-         <path-element>D:\Program Files (x86)\Adobe\flash builder 4\Adobe Flash Builder 4\sdks\flex_sdk_4.6\frameworks\locale\{locale}</path-element>
-         <path-element>D:\workspace\player\disk-player\DiskPlayer\libs\OSMF.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/authoringsupport.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/flash-integration.swc</path-element>
+         <path-element>/Applications/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/locale/{locale}</path-element>
+         <path-element>/Users/raisezhang/workspace/baidu/fe/disk-player/DiskPlayer/libs/OSMF.swc</path-element>
       </library-path>
-      <!-- compiler.locale: ÷∏∂®π˙º ªØµƒ«¯”Ú-->
+      <!-- compiler.locale: ÊåáÂÆöÂõΩÈôÖÂåñÁöÑÂå∫Âüü-->
       <locale>
          <locale-element>en_US</locale-element>
       </locale>
       <!-- compiler.minimum-supported-version usage:
       <minimum-supported-version>string</minimum-supported-version>
       -->
-      <!-- compiler.mobile: ÷∏∂®ƒø±Í‘À–– ±Œ™ ÷ª˙…Ë±∏-->
+      <!-- compiler.mobile: ÊåáÂÆöÁõÆÊ†áËøêË°åÊó∂‰∏∫ÊâãÊú∫ËÆæÂ§á-->
       <mobile>false</mobile>
       <mxml>
-         <!-- compiler.mxml.compatibility-version: ÷∏∂®ºÊ»›–‘∞Ê±æ£¨¿˝»Á -compatibility-version=2.0.1-->
+         <!-- compiler.mxml.compatibility-version: ÊåáÂÆöÂÖºÂÆπÊÄßÁâàÊú¨Ôºå‰æãÂ¶Ç -compatibility-version=2.0.1-->
          <!-- compiler.mxml.compatibility-version usage:
          <compatibility-version>version</compatibility-version>
          -->
@@ -170,7 +170,7 @@
          -->
       </mxml>
       <namespaces>
-         <!-- compiler.namespaces.namespace: ÷∏∂®“™”Î”√◊˜ MXML ‘™Àÿµƒ◊Èº˛µƒ«Âµ•πÿ¡™µƒ URI-->
+         <!-- compiler.namespaces.namespace: ÊåáÂÆöË¶Å‰∏éÁî®‰Ωú MXML ÂÖÉÁ¥†ÁöÑÁªÑ‰ª∂ÁöÑÊ∏ÖÂçïÂÖ≥ËÅîÁöÑ URI-->
          <namespace>
             <uri>http://ns.adobe.com/mxml/2009</uri>
             <manifest>mxml-2009-manifest.xml</manifest>
@@ -188,153 +188,153 @@
             <manifest>mxml-manifest.xml</manifest>
          </namespace>
       </namespaces>
-      <!-- compiler.omit-trace-statements: «–ªª «∑Ò∫ˆ¬‘ trace ”Ôæ‰-->
+      <!-- compiler.omit-trace-statements: ÂàáÊç¢ÊòØÂê¶ÂøΩÁï• trace ËØ≠Âè•-->
       <omit-trace-statements>true</omit-trace-statements>
-      <!-- compiler.optimize: ∆Ù”√¡¥Ω”∫Û SWF ”≈ªØ-->
+      <!-- compiler.optimize: ÂêØÁî®ÈìæÊé•Âêé SWF ‰ºòÂåñ-->
       <optimize>true</optimize>
-      <!-- compiler.preloader: ÷∏∂®”¶”√≥Ã–Ú‘§º”‘ÿ∆˜ Ù–‘µƒƒ¨»œ÷µ°£»Áπ˚Œ¥÷∏∂®£¨‘Úƒ¨»œµƒ‘§º”‘ÿ∆˜÷µŒ™ mx.preloaders.SparkDownloadProgressBar£®-compatibility-version >= 4.0  ±£©∫Õ mx.preloaders.DownloadProgressBar£®-compatibility-version < 4.0  ±£©°£-->
+      <!-- compiler.preloader: ÊåáÂÆöÂ∫îÁî®Á®ãÂ∫èÈ¢ÑÂä†ËΩΩÂô®Â±ûÊÄßÁöÑÈªòËÆ§ÂÄº„ÄÇÂ¶ÇÊûúÊú™ÊåáÂÆöÔºåÂàôÈªòËÆ§ÁöÑÈ¢ÑÂä†ËΩΩÂô®ÂÄº‰∏∫ mx.preloaders.SparkDownloadProgressBarÔºà-compatibility-version >= 4.0 Êó∂ÔºâÂíå mx.preloaders.DownloadProgressBarÔºà-compatibility-version < 4.0 Êó∂Ôºâ„ÄÇ-->
       <!-- compiler.preloader usage:
       <preloader>string</preloader>
       -->
-      <!-- compiler.report-invalid-styles-as-warnings: Ω´Œﬁ–ß—˘ Ω±®∏ÊŒ™æØ∏Ê-->
+      <!-- compiler.report-invalid-styles-as-warnings: Â∞ÜÊó†ÊïàÊ†∑ÂºèÊä•Âëä‰∏∫Ë≠¶Âëä-->
       <!-- compiler.report-invalid-styles-as-warnings usage:
       <report-invalid-styles-as-warnings>boolean</report-invalid-styles-as-warnings>
       -->
-      <!-- compiler.report-missing-required-skin-parts-as-warnings:  π”√¥À—°œÓø…‘⁄ºÏ≤‚µΩ»±…ŸÀ˘–ËµƒÕ‚π€≤øº˛ ±…˙≥…æØ∏Ê£¨∂¯≤ª «…˙≥…¥ÌŒÛ°£-->
+      <!-- compiler.report-missing-required-skin-parts-as-warnings: ‰ΩøÁî®Ê≠§ÈÄâÈ°πÂèØÂú®Ê£ÄÊµãÂà∞Áº∫Â∞ëÊâÄÈúÄÁöÑÂ§ñËßÇÈÉ®‰ª∂Êó∂ÁîüÊàêË≠¶ÂëäÔºåËÄå‰∏çÊòØÁîüÊàêÈîôËØØ„ÄÇ-->
       <!-- compiler.report-missing-required-skin-parts-as-warnings usage:
       <report-missing-required-skin-parts-as-warnings>boolean</report-missing-required-skin-parts-as-warnings>
       -->
-      <!-- compiler.services: µΩ Flex Data Services ≈‰÷√Œƒº˛µƒ¬∑æ∂-->
+      <!-- compiler.services: Âà∞ Flex Data Services ÈÖçÁΩÆÊñá‰ª∂ÁöÑË∑ØÂæÑ-->
       <!-- compiler.services usage:
       <services>filename</services>
       -->
-      <!-- compiler.show-actionscript-warnings: ‘⁄ºÏ≤‚∫œ∑®µ´ø…ƒ‹≤ª’˝»∑µƒ¥˙¬Îµƒƒ£ Ωœ¬‘À–– AS3 ±‡“Î∆˜-->
+      <!-- compiler.show-actionscript-warnings: Âú®Ê£ÄÊµãÂêàÊ≥ï‰ΩÜÂèØËÉΩ‰∏çÊ≠£Á°ÆÁöÑ‰ª£Á†ÅÁöÑÊ®°Âºè‰∏ãËøêË°å AS3 ÁºñËØëÂô®-->
       <show-actionscript-warnings>true</show-actionscript-warnings>
-      <!-- compiler.show-binding-warnings: «–ªª «∑Òœ‘ æ ˝æ›∞Û∂®¥˙¬Î…˙≥…µƒæØ∏Ê-->
+      <!-- compiler.show-binding-warnings: ÂàáÊç¢ÊòØÂê¶ÊòæÁ§∫Êï∞ÊçÆÁªëÂÆö‰ª£Á†ÅÁîüÊàêÁöÑË≠¶Âëä-->
       <show-binding-warnings>true</show-binding-warnings>
-      <!-- compiler.show-invalid-css-property-warnings: «–ªª «∑Ò±®∏ÊŒﬁ–ß css  Ù–‘æØ∏Ê-->
+      <!-- compiler.show-invalid-css-property-warnings: ÂàáÊç¢ÊòØÂê¶Êä•ÂëäÊó†Êïà css Â±ûÊÄßË≠¶Âëä-->
       <!-- compiler.show-invalid-css-property-warnings usage:
       <show-invalid-css-property-warnings>boolean</show-invalid-css-property-warnings>
       -->
-      <!-- compiler.show-shadowed-device-font-warnings: «–ªª «∑Ò‘⁄«∂»Î◊÷ÃÂ√˚≥∆∏≤∏«…Ë±∏◊÷ÃÂ√˚≥∆ ±œ‘ ææØ∏Ê-->
+      <!-- compiler.show-shadowed-device-font-warnings: ÂàáÊç¢ÊòØÂê¶Âú®ÂµåÂÖ•Â≠ó‰ΩìÂêçÁß∞Ë¶ÜÁõñËÆæÂ§áÂ≠ó‰ΩìÂêçÁß∞Êó∂ÊòæÁ§∫Ë≠¶Âëä-->
       <show-shadowed-device-font-warnings>false</show-shadowed-device-font-warnings>
-      <!-- compiler.show-unused-type-selector-warnings: «–ªª «∑Òœ‘ æŒ¥ π”√µƒ CSS ¿‡–Õ—°‘Ò∆˜…˙≥…µƒæØ∏Ê-->
+      <!-- compiler.show-unused-type-selector-warnings: ÂàáÊç¢ÊòØÂê¶ÊòæÁ§∫Êú™‰ΩøÁî®ÁöÑ CSS Á±ªÂûãÈÄâÊã©Âô®ÁîüÊàêÁöÑË≠¶Âëä-->
       <show-unused-type-selector-warnings>true</show-unused-type-selector-warnings>
-      <!-- compiler.source-path: ππ≥… ActionScript ¿‡≤„¥Œ∏˘µƒ¬∑æ∂‘™Àÿ¡–±Ì-->
+      <!-- compiler.source-path: ÊûÑÊàê ActionScript Á±ªÂ±ÇÊ¨°Ê†πÁöÑË∑ØÂæÑÂÖÉÁ¥†ÂàóË°®-->
       <source-path>
-         <path-element>D:\workspace\player\disk-player\HLSPlugin\src</path-element>
-         <path-element>D:\workspace\player\disk-player\HLSPlugin\src</path-element>
+         <path-element>/Users/raisezhang/workspace/baidu/fe/disk-player/HLSPlugin/src</path-element>
+         <path-element>/Users/raisezhang/workspace/baidu/fe/disk-player/HLSPlugin/src</path-element>
       </source-path>
-      <!-- compiler.strict: ‘⁄—œ∏ÒºÏ≤È¥ÌŒÛµƒƒ£ Ωœ¬‘À–– AS3 ±‡“Î∆˜°£-->
+      <!-- compiler.strict: Âú®‰∏•Ê†ºÊ£ÄÊü•ÈîôËØØÁöÑÊ®°Âºè‰∏ãËøêË°å AS3 ÁºñËØëÂô®„ÄÇ-->
       <strict>true</strict>
-      <!-- compiler.theme: “™”¶”√Œ™÷˜Ã‚µƒ CSS ªÚ SWC Œƒº˛µƒ¡–±Ì-->
+      <!-- compiler.theme: Ë¶ÅÂ∫îÁî®‰∏∫‰∏ªÈ¢òÁöÑ CSS Êàñ SWC Êñá‰ª∂ÁöÑÂàóË°®-->
       <theme>
          <filename>themes/Spark/spark.css</filename>
       </theme>
-      <!-- compiler.use-resource-bundle-metadata: »∑∂® «∑Ò‘⁄”¶”√≥Ã–Ú÷–∞¸∫¨◊ ‘¥ ¯°£-->
+      <!-- compiler.use-resource-bundle-metadata: Á°ÆÂÆöÊòØÂê¶Âú®Â∫îÁî®Á®ãÂ∫è‰∏≠ÂåÖÂê´ËµÑÊ∫êÊùü„ÄÇ-->
       <use-resource-bundle-metadata>false</use-resource-bundle-metadata>
-      <!-- compiler.verbose-stacktraces: Ω´µ˜”√∂—’ª–≈œ¢±£¥ÊŒ™ SWF “‘π©µ˜ ‘-->
+      <!-- compiler.verbose-stacktraces: Â∞ÜË∞ÉÁî®Â†ÜÊ†à‰ø°ÊÅØ‰øùÂ≠ò‰∏∫ SWF ‰ª•‰æõË∞ÉËØï-->
       <verbose-stacktraces>false</verbose-stacktraces>
-      <!-- compiler.warn-array-tostring-changes: Array.toString() ∏Ò Ω“—∏¸∏ƒ°£-->
+      <!-- compiler.warn-array-tostring-changes: Array.toString() Ê†ºÂºèÂ∑≤Êõ¥Êîπ„ÄÇ-->
       <warn-array-tostring-changes>false</warn-array-tostring-changes>
-      <!-- compiler.warn-assignment-within-conditional: ‘⁄Ãıº˛ƒ⁄µƒ÷∏∂®°£-->
+      <!-- compiler.warn-assignment-within-conditional: Âú®Êù°‰ª∂ÂÜÖÁöÑÊåáÂÆö„ÄÇ-->
       <warn-assignment-within-conditional>true</warn-assignment-within-conditional>
-      <!-- compiler.warn-bad-array-cast:  ˝◊Èº∆À„≤Ÿ◊˜ø…ƒ‹Œﬁ–ß°£-->
+      <!-- compiler.warn-bad-array-cast: Êï∞ÁªÑËÆ°ÁÆóÊìç‰ΩúÂèØËÉΩÊó†Êïà„ÄÇ-->
       <warn-bad-array-cast>true</warn-bad-array-cast>
-      <!-- compiler.warn-bad-bool-assignment: ‘⁄”¶ π”√≤º∂˚÷µµƒµÿ∑Ω π”√¡À∑«≤º∂˚÷µ°£-->
+      <!-- compiler.warn-bad-bool-assignment: Âú®Â∫î‰ΩøÁî®Â∏ÉÂ∞îÂÄºÁöÑÂú∞Êñπ‰ΩøÁî®‰∫ÜÈùûÂ∏ÉÂ∞îÂÄº„ÄÇ-->
       <warn-bad-bool-assignment>true</warn-bad-bool-assignment>
-      <!-- compiler.warn-bad-date-cast: Date ◊™ªª≤Ÿ◊˜Œﬁ–ß°£-->
+      <!-- compiler.warn-bad-date-cast: Date ËΩ¨Êç¢Êìç‰ΩúÊó†Êïà„ÄÇ-->
       <warn-bad-date-cast>true</warn-bad-date-cast>
-      <!-- compiler.warn-bad-es3-type-method: ∑Ω∑®Œ¥÷™°£-->
+      <!-- compiler.warn-bad-es3-type-method: ÊñπÊ≥ïÊú™Áü•„ÄÇ-->
       <warn-bad-es3-type-method>true</warn-bad-es3-type-method>
-      <!-- compiler.warn-bad-es3-type-prop:  Ù–‘Œ¥÷™°£-->
+      <!-- compiler.warn-bad-es3-type-prop: Â±ûÊÄßÊú™Áü•„ÄÇ-->
       <warn-bad-es3-type-prop>true</warn-bad-es3-type-prop>
-      <!-- compiler.warn-bad-nan-comparison: ”Î NaN ±»ΩœŒﬁ“‚“Â°£»Œ∫Œ…Êº∞µΩ NaN µƒ±»Ωœ‘ÀÀ„Ω·π˚∂ºΩ´Œ™ false£¨“ÚŒ™ NaN != NaN°£-->
+      <!-- compiler.warn-bad-nan-comparison: ‰∏é NaN ÊØîËæÉÊó†ÊÑè‰πâ„ÄÇ‰ªª‰ΩïÊ∂âÂèäÂà∞ NaN ÁöÑÊØîËæÉËøêÁÆóÁªìÊûúÈÉΩÂ∞Ü‰∏∫ falseÔºåÂõ†‰∏∫ NaN != NaN„ÄÇ-->
       <warn-bad-nan-comparison>true</warn-bad-nan-comparison>
-      <!-- compiler.warn-bad-null-assignment: ≤ªƒ‹÷∏∂®Œ™ null°£-->
+      <!-- compiler.warn-bad-null-assignment: ‰∏çËÉΩÊåáÂÆö‰∏∫ null„ÄÇ-->
       <warn-bad-null-assignment>true</warn-bad-null-assignment>
-      <!-- compiler.warn-bad-null-comparison: ”Î null ±»ΩœŒﬁ“‚“Â°£-->
+      <!-- compiler.warn-bad-null-comparison: ‰∏é null ÊØîËæÉÊó†ÊÑè‰πâ„ÄÇ-->
       <warn-bad-null-comparison>true</warn-bad-null-comparison>
-      <!-- compiler.warn-bad-undefined-comparison: ”Î undefined ±»ΩœŒﬁ“‚“Â°£ΩˆŒﬁ¿‡–Õ±‰¡ø£®ªÚ¿‡–ÕŒ™ * µƒ±‰¡ø£©‘ –Ì undefined°£-->
+      <!-- compiler.warn-bad-undefined-comparison: ‰∏é undefined ÊØîËæÉÊó†ÊÑè‰πâ„ÄÇ‰ªÖÊó†Á±ªÂûãÂèòÈáèÔºàÊàñÁ±ªÂûã‰∏∫ * ÁöÑÂèòÈáèÔºâÂÖÅËÆ∏ undefined„ÄÇ-->
       <warn-bad-undefined-comparison>true</warn-bad-undefined-comparison>
-      <!-- compiler.warn-boolean-constructor-with-no-args: ‘⁄ ActionScript 3.0 ÷–£¨»Ù Boolean() ≤ª¥¯≤Œ ˝£¨‘Úª·∑µªÿ false°£‘⁄ ActionScript 2.0 ÷–£¨Boolean() ª·∑µªÿ undefined°£-->
+      <!-- compiler.warn-boolean-constructor-with-no-args: Âú® ActionScript 3.0 ‰∏≠ÔºåËã• Boolean() ‰∏çÂ∏¶ÂèÇÊï∞ÔºåÂàô‰ºöËøîÂõû false„ÄÇÂú® ActionScript 2.0 ‰∏≠ÔºåBoolean() ‰ºöËøîÂõû undefined„ÄÇ-->
       <warn-boolean-constructor-with-no-args>false</warn-boolean-constructor-with-no-args>
-      <!-- compiler.warn-changes-in-resolve: __resolve ≤ª‘Ÿ ‹÷ß≥÷°£-->
+      <!-- compiler.warn-changes-in-resolve: __resolve ‰∏çÂÜçÂèóÊîØÊåÅ„ÄÇ-->
       <warn-changes-in-resolve>false</warn-changes-in-resolve>
-      <!-- compiler.warn-class-is-sealed: ¿‡“—∑‚◊∞°£Œﬁ∑®∂ØÃ¨œÚ∆‰ÃÌº”≥…‘±°£-->
+      <!-- compiler.warn-class-is-sealed: Á±ªÂ∑≤Â∞ÅË£Ö„ÄÇÊó†Ê≥ïÂä®ÊÄÅÂêëÂÖ∂Ê∑ªÂä†ÊàêÂëò„ÄÇ-->
       <warn-class-is-sealed>true</warn-class-is-sealed>
-      <!-- compiler.warn-const-not-initialized: Œ¥≥ı ºªØ≥£¡ø°£-->
+      <!-- compiler.warn-const-not-initialized: Êú™ÂàùÂßãÂåñÂ∏∏Èáè„ÄÇ-->
       <warn-const-not-initialized>true</warn-const-not-initialized>
-      <!-- compiler.warn-constructor-returns-value: ‘⁄–¬±Ì¥Ô Ω÷– π”√µƒ∫Ø ˝∑µªÿ“ª∏ˆ÷µ°£Ω·π˚Ω´ «∫Ø ˝∑µªÿµƒ÷µ£¨∂¯≤ª «∏√∫Ø ˝µƒ–¬ µ¿˝°£-->
+      <!-- compiler.warn-constructor-returns-value: Âú®Êñ∞Ë°®ËææÂºè‰∏≠‰ΩøÁî®ÁöÑÂáΩÊï∞ËøîÂõû‰∏Ä‰∏™ÂÄº„ÄÇÁªìÊûúÂ∞ÜÊòØÂáΩÊï∞ËøîÂõûÁöÑÂÄºÔºåËÄå‰∏çÊòØËØ•ÂáΩÊï∞ÁöÑÊñ∞ÂÆû‰æã„ÄÇ-->
       <warn-constructor-returns-value>false</warn-constructor-returns-value>
-      <!-- compiler.warn-deprecated-event-handler-error: EventHandler Œ¥◊˜Œ™’ÏÃ˝∆˜ÃÌº”°£-->
+      <!-- compiler.warn-deprecated-event-handler-error: EventHandler Êú™‰Ωú‰∏∫‰æ¶Âê¨Âô®Ê∑ªÂä†„ÄÇ-->
       <warn-deprecated-event-handler-error>false</warn-deprecated-event-handler-error>
-      <!-- compiler.warn-deprecated-function-error: ≤ª÷ß≥÷µƒ ActionScript 2.0 ∫Ø ˝°£-->
+      <!-- compiler.warn-deprecated-function-error: ‰∏çÊîØÊåÅÁöÑ ActionScript 2.0 ÂáΩÊï∞„ÄÇ-->
       <warn-deprecated-function-error>true</warn-deprecated-function-error>
-      <!-- compiler.warn-deprecated-property-error: ≤ª÷ß≥÷µƒ ActionScript 2.0  Ù–‘°£-->
+      <!-- compiler.warn-deprecated-property-error: ‰∏çÊîØÊåÅÁöÑ ActionScript 2.0 Â±ûÊÄß„ÄÇ-->
       <warn-deprecated-property-error>true</warn-deprecated-property-error>
-      <!-- compiler.warn-duplicate-argument-names: ∂‡∏ˆ≤Œ ˝æﬂ”–œ‡Õ¨√˚≥∆°£-->
+      <!-- compiler.warn-duplicate-argument-names: Â§ö‰∏™ÂèÇÊï∞ÂÖ∑ÊúâÁõ∏ÂêåÂêçÁß∞„ÄÇ-->
       <warn-duplicate-argument-names>true</warn-duplicate-argument-names>
-      <!-- compiler.warn-duplicate-variable-def: ±‰¡ø∂®“Â÷ÿ∏¥ -->
+      <!-- compiler.warn-duplicate-variable-def: ÂèòÈáèÂÆö‰πâÈáçÂ§ç -->
       <warn-duplicate-variable-def>true</warn-duplicate-variable-def>
-      <!-- compiler.warn-for-var-in-changes: ActionScript 3.0 Ω´ª·“‘ÀÊª˙À≥–Ú—≠ª∑∑√Œ °∞for x in target°±”Ôæ‰÷–µƒ∂‘œÛ Ù–‘°£-->
+      <!-- compiler.warn-for-var-in-changes: ActionScript 3.0 Â∞Ü‰ºö‰ª•ÈöèÊú∫È°∫Â∫èÂæ™ÁéØËÆøÈóÆ‚Äúfor x in target‚ÄùËØ≠Âè•‰∏≠ÁöÑÂØπË±°Â±ûÊÄß„ÄÇ-->
       <warn-for-var-in-changes>false</warn-for-var-in-changes>
-      <!-- compiler.warn-import-hides-class: µº»Î√˚≥∆”Îµ±«∞¿‡œ‡Õ¨µƒ ˝æ›∞¸ ±£¨Ω´ª·“˛≤ÿ¥À∑∂Œß÷–µƒ∏√¿‡±Í ∂∑˚°£-->
+      <!-- compiler.warn-import-hides-class: ÂØºÂÖ•ÂêçÁß∞‰∏éÂΩìÂâçÁ±ªÁõ∏ÂêåÁöÑÊï∞ÊçÆÂåÖÊó∂ÔºåÂ∞Ü‰ºöÈöêËóèÊ≠§ËåÉÂõ¥‰∏≠ÁöÑËØ•Á±ªÊ†áËØÜÁ¨¶„ÄÇ-->
       <warn-import-hides-class>true</warn-import-hides-class>
-      <!-- compiler.warn-instance-of-changes:  π”√ instanceof ‘ÀÀ„∑˚°£-->
+      <!-- compiler.warn-instance-of-changes: ‰ΩøÁî® instanceof ËøêÁÆóÁ¨¶„ÄÇ-->
       <warn-instance-of-changes>true</warn-instance-of-changes>
-      <!-- compiler.warn-internal-error: ±‡“Î∆˜÷–µƒƒ⁄≤ø¥ÌŒÛ°£-->
+      <!-- compiler.warn-internal-error: ÁºñËØëÂô®‰∏≠ÁöÑÂÜÖÈÉ®ÈîôËØØ„ÄÇ-->
       <warn-internal-error>true</warn-internal-error>
-      <!-- compiler.warn-level-not-supported: _level ≤ª‘Ÿ ‹÷ß≥÷°£”–πÿœÍœ∏–≈œ¢£¨«Î≤Œº˚ flash.display  ˝æ›∞¸°£-->
+      <!-- compiler.warn-level-not-supported: _level ‰∏çÂÜçÂèóÊîØÊåÅ„ÄÇÊúâÂÖ≥ËØ¶ÁªÜ‰ø°ÊÅØÔºåËØ∑ÂèÇËßÅ flash.display Êï∞ÊçÆÂåÖ„ÄÇ-->
       <warn-level-not-supported>true</warn-level-not-supported>
-      <!-- compiler.warn-missing-namespace-decl: »±…Ÿ√¸√˚ø’º‰…˘√˜£®¿˝»Á£¨Œ¥Ω´±‰¡ø∂®“ÂŒ™π´π≤±‰¡ø°¢ÀΩ”–±‰¡øµ»£©°£-->
+      <!-- compiler.warn-missing-namespace-decl: Áº∫Â∞ëÂëΩÂêçÁ©∫Èó¥Â£∞ÊòéÔºà‰æãÂ¶ÇÔºåÊú™Â∞ÜÂèòÈáèÂÆö‰πâ‰∏∫ÂÖ¨ÂÖ±ÂèòÈáè„ÄÅÁßÅÊúâÂèòÈáèÁ≠âÔºâ„ÄÇ-->
       <warn-missing-namespace-decl>true</warn-missing-namespace-decl>
-      <!-- compiler.warn-negative-uint-literal: ÷∏∂®Œ™ uint  ˝æ›¿‡–Õ ±£¨∏∫÷µª·±‰≥…“ª∏ˆΩœ¥Ûµƒ’˝÷µ°£-->
+      <!-- compiler.warn-negative-uint-literal: ÊåáÂÆö‰∏∫ uint Êï∞ÊçÆÁ±ªÂûãÊó∂ÔºåË¥üÂÄº‰ºöÂèòÊàê‰∏Ä‰∏™ËæÉÂ§ßÁöÑÊ≠£ÂÄº„ÄÇ-->
       <warn-negative-uint-literal>true</warn-negative-uint-literal>
-      <!-- compiler.warn-no-constructor: »±…Ÿππ‘Ï∫Ø ˝°£-->
+      <!-- compiler.warn-no-constructor: Áº∫Â∞ëÊûÑÈÄ†ÂáΩÊï∞„ÄÇ-->
       <warn-no-constructor>false</warn-no-constructor>
-      <!-- compiler.warn-no-explicit-super-call-in-constructor: Œ¥‘⁄ππ‘Ï∫Ø ˝÷–µ˜”√ super() ”Ôæ‰°£-->
+      <!-- compiler.warn-no-explicit-super-call-in-constructor: Êú™Âú®ÊûÑÈÄ†ÂáΩÊï∞‰∏≠Ë∞ÉÁî® super() ËØ≠Âè•„ÄÇ-->
       <warn-no-explicit-super-call-in-constructor>false</warn-no-explicit-super-call-in-constructor>
-      <!-- compiler.warn-no-type-decl: »±…Ÿ¿‡–Õ…˘√˜°£-->
+      <!-- compiler.warn-no-type-decl: Áº∫Â∞ëÁ±ªÂûãÂ£∞Êòé„ÄÇ-->
       <warn-no-type-decl>true</warn-no-type-decl>
-      <!-- compiler.warn-number-from-string-changes: ‘⁄ ActionScript 3.0 ÷–£¨∫ˆ¬‘ø’∏Ò«“ '' ∑µªÿ 0°£‘⁄ ActionScript 2.0 ÷–£¨µ±≤Œ ˝ « '' ªÚ∞¸∫¨ø’∏Ò ±£¨Number() ∑µªÿ NaN°£-->
+      <!-- compiler.warn-number-from-string-changes: Âú® ActionScript 3.0 ‰∏≠ÔºåÂøΩÁï•Á©∫Ê†º‰∏î '' ËøîÂõû 0„ÄÇÂú® ActionScript 2.0 ‰∏≠ÔºåÂΩìÂèÇÊï∞ÊòØ '' ÊàñÂåÖÂê´Á©∫Ê†ºÊó∂ÔºåNumber() ËøîÂõû NaN„ÄÇ-->
       <warn-number-from-string-changes>false</warn-number-from-string-changes>
-      <!-- compiler.warn-scoping-change-in-this: this πÿº¸◊÷µƒ∑∂Œß”–±‰∏¸°£¥”¿‡µƒ µ¿˝÷–Ã·»°µƒ¿‡∑Ω∑®◊‹ «Ω´ this Ω‚Œˆªÿ∏√ µ¿˝°£‘⁄ ActionScript 2.0 ÷–£¨∏˘æ›µ˜”√∑Ω∑®µƒŒª÷√¿¥∂ØÃ¨≤È’“ this°£-->
+      <!-- compiler.warn-scoping-change-in-this: this ÂÖ≥ÈîÆÂ≠óÁöÑËåÉÂõ¥ÊúâÂèòÊõ¥„ÄÇ‰ªéÁ±ªÁöÑÂÆû‰æã‰∏≠ÊèêÂèñÁöÑÁ±ªÊñπÊ≥ïÊÄªÊòØÂ∞Ü this Ëß£ÊûêÂõûËØ•ÂÆû‰æã„ÄÇÂú® ActionScript 2.0 ‰∏≠ÔºåÊ†πÊçÆË∞ÉÁî®ÊñπÊ≥ïÁöÑ‰ΩçÁΩÆÊù•Âä®ÊÄÅÊü•Êâæ this„ÄÇ-->
       <warn-scoping-change-in-this>false</warn-scoping-change-in-this>
-      <!-- compiler.warn-slow-text-field-addition: ∂‘Œƒ±æ”Ú π”√ += Œﬁ–ß°£-->
+      <!-- compiler.warn-slow-text-field-addition: ÂØπÊñáÊú¨Âüü‰ΩøÁî® += Êó†Êïà„ÄÇ-->
       <warn-slow-text-field-addition>true</warn-slow-text-field-addition>
-      <!-- compiler.warn-unlikely-function-value: ø…ƒ‹»±…Ÿ‘≤¿®∫≈°£-->
+      <!-- compiler.warn-unlikely-function-value: ÂèØËÉΩÁº∫Â∞ëÂúÜÊã¨Âè∑„ÄÇ-->
       <warn-unlikely-function-value>true</warn-unlikely-function-value>
-      <!-- compiler.warn-xml-class-has-changed: ø…ƒ‹ π”√¡À ActionScript 2.0 XML ¿‡°£-->
+      <!-- compiler.warn-xml-class-has-changed: ÂèØËÉΩ‰ΩøÁî®‰∫Ü ActionScript 2.0 XML Á±ª„ÄÇ-->
       <warn-xml-class-has-changed>false</warn-xml-class-has-changed>
    </compiler>
-   <!-- compute-digest: Ω´’™“™–¥»Îø‚µƒ catalog.xml°£»Áπ˚“™‘⁄°∞-runtime-shared-libraries-path°±—°œÓ÷– π”√ø‚£¨’‚ «±ÿ–Ëµƒ°£-->
+   <!-- compute-digest: Â∞ÜÊëòË¶ÅÂÜôÂÖ•Â∫ìÁöÑ catalog.xml„ÄÇÂ¶ÇÊûúË¶ÅÂú®‚Äú-runtime-shared-libraries-path‚ÄùÈÄâÈ°π‰∏≠‰ΩøÁî®Â∫ìÔºåËøôÊòØÂøÖÈúÄÁöÑ„ÄÇ-->
    <!-- compute-digest usage:
    <compute-digest>boolean</compute-digest>
    -->
-   <!-- debug-password: “™∞¸∫¨‘⁄ø…µ˜ ‘µƒ SWF ÷–µƒø⁄¡Ó-->
+   <!-- debug-password: Ë¶ÅÂåÖÂê´Âú®ÂèØË∞ÉËØïÁöÑ SWF ‰∏≠ÁöÑÂè£‰ª§-->
    <!-- debug-password usage:
    <debug-password>string</debug-password>
    -->
-   <!-- default-background-color: ƒ¨»œ±≥æ∞—’…´£®”¶”√≥Ã–Ú¥˙¬Îø…“‘÷ÿ–¥∏√÷µ£©-->
+   <!-- default-background-color: ÈªòËÆ§ËÉåÊôØÈ¢úËâ≤ÔºàÂ∫îÁî®Á®ãÂ∫è‰ª£Á†ÅÂèØ‰ª•ÈáçÂÜôËØ•ÂÄºÔºâ-->
    <default-background-color>0xFFFFFF</default-background-color>
-   <!-- default-frame-rate: “™‘⁄ SWF ÷– π”√µƒƒ¨»œ÷°∆µ°£-->
+   <!-- default-frame-rate: Ë¶ÅÂú® SWF ‰∏≠‰ΩøÁî®ÁöÑÈªòËÆ§Â∏ßÈ¢ë„ÄÇ-->
    <default-frame-rate>24</default-frame-rate>
-   <!-- default-script-limits: ƒ¨»œΩ≈±æ÷¥––œﬁ÷∆£®root  Ù–‘ø…“‘÷ÿ–¥∏√÷µ£©-->
+   <!-- default-script-limits: ÈªòËÆ§ËÑöÊú¨ÊâßË°åÈôêÂà∂Ôºàroot Â±ûÊÄßÂèØ‰ª•ÈáçÂÜôËØ•ÂÄºÔºâ-->
    <default-script-limits>
       <max-recursion-depth>1000</max-recursion-depth>
       <max-execution-time>60</max-execution-time>
    </default-script-limits>
-   <!-- default-size: ƒ¨»œ”¶”√≥Ã–Ú¥Û–°£®”¶”√≥Ã–Ú÷–µƒ root  Ù–‘ø…“‘÷ÿ–¥∏√÷µ£©-->
+   <!-- default-size: ÈªòËÆ§Â∫îÁî®Á®ãÂ∫èÂ§ßÂ∞èÔºàÂ∫îÁî®Á®ãÂ∫è‰∏≠ÁöÑ root Â±ûÊÄßÂèØ‰ª•ÈáçÂÜôËØ•ÂÄºÔºâ-->
    <default-size>
       <width>500</width>
       <height>375</height>
    </default-size>
-   <!-- directory: Ω´ø‚ ‰≥ˆŒ™ø™∑≈ Ωƒø¬º∂¯∑« SWC Œƒº˛-->
+   <!-- directory: Â∞ÜÂ∫ìËæìÂá∫‰∏∫ÂºÄÊîæÂºèÁõÆÂΩïËÄåÈùû SWC Êñá‰ª∂-->
    <!-- directory usage:
    <directory>boolean</directory>
    -->
-   <!-- externs: ππΩ® SWF  ±“™¥”¡¥Ω”÷–…æµÙµƒ∑˚∫≈¡–±Ì-->
+   <!-- externs: ÊûÑÂª∫ SWF Êó∂Ë¶Å‰ªéÈìæÊé•‰∏≠Âà†ÊéâÁöÑÁ¨¶Âè∑ÂàóË°®-->
    <!-- externs usage:
    <externs>
       <symbol>string</symbol>
@@ -342,7 +342,7 @@
    </externs>
    -->
    <frames>
-      <!-- frames.frame: ¥¯”–Ω´±ª¡¥Ω”µΩ÷°…œµƒ¿‡√˚≥∆–Ú¡–µƒ SWF ÷°±Í«©°£-->
+      <!-- frames.frame: Â∏¶ÊúâÂ∞ÜË¢´ÈìæÊé•Âà∞Â∏ß‰∏äÁöÑÁ±ªÂêçÁß∞Â∫èÂàóÁöÑ SWF Â∏ßÊ†áÁ≠æ„ÄÇ-->
       <!-- frames.frame usage:
       <frame>
          <label>string</label>
@@ -351,14 +351,14 @@
       -->
    </frames>
    <framework>halo</framework>
-   <!-- include-classes: “™∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–µƒ¿‡¡–±Ì-->
+   <!-- include-classes: Ë¶ÅÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠ÁöÑÁ±ªÂàóË°®-->
    <!-- include-classes usage:
    <include-classes>
       <class>string</class>
       <class>string</class>
    </include-classes>
    -->
-   <!-- include-file: “™∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–µƒ√¸√˚Œƒº˛¡–±Ì-->
+   <!-- include-file: Ë¶ÅÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠ÁöÑÂëΩÂêçÊñá‰ª∂ÂàóË°®-->
    <!-- include-file usage:
    <include-file>
       <name>string</name>
@@ -366,36 +366,36 @@
       <path>string</path>
    </include-file>
    -->
-   <!-- include-inheritance-dependencies-only: Ωˆ∞¸¿® π”√ include-classes ÷∏∂®µƒ¿‡µƒºÃ≥–“¿¿µœÓ-->
+   <!-- include-inheritance-dependencies-only: ‰ªÖÂåÖÊã¨‰ΩøÁî® include-classes ÊåáÂÆöÁöÑÁ±ªÁöÑÁªßÊâø‰æùËµñÈ°π-->
    <!-- include-inheritance-dependencies-only usage:
    <include-inheritance-dependencies-only>boolean</include-inheritance-dependencies-only>
    -->
-   <!-- include-lookup-only: »ÙŒ™ true£¨‘Úæﬂ”– lookupOnly=true µƒ«Âµ•œÓΩ´∞¸∫¨‘⁄ SWC ƒø¬º÷–°£ƒ¨»œ÷µŒ™ false°£-->
+   <!-- include-lookup-only: Ëã•‰∏∫ trueÔºåÂàôÂÖ∑Êúâ lookupOnly=true ÁöÑÊ∏ÖÂçïÈ°πÂ∞ÜÂåÖÂê´Âú® SWC ÁõÆÂΩï‰∏≠„ÄÇÈªòËÆ§ÂÄº‰∏∫ false„ÄÇ-->
    <!-- include-lookup-only usage:
    <include-lookup-only>boolean</include-lookup-only>
    -->
-   <!-- include-namespaces: ¡–≥ˆµƒ√¸√˚ø’º‰÷–µƒÀ˘”–¿‡∂º∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–-->
+   <!-- include-namespaces: ÂàóÂá∫ÁöÑÂëΩÂêçÁ©∫Èó¥‰∏≠ÁöÑÊâÄÊúâÁ±ªÈÉΩÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠-->
    <!-- include-namespaces usage:
    <include-namespaces>
       <uri>string</uri>
       <uri>string</uri>
    </include-namespaces>
    -->
-   <!-- include-resource-bundles: “™∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–µƒ◊ ‘¥ ¯¡–±Ì-->
+   <!-- include-resource-bundles: Ë¶ÅÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠ÁöÑËµÑÊ∫êÊùüÂàóË°®-->
    <!-- include-resource-bundles usage:
    <include-resource-bundles>
       <bundle>string</bundle>
       <bundle>string</bundle>
    </include-resource-bundles>
    -->
-   <!-- include-sources: “™∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–µƒƒø¬º∫Õ‘¥Œƒº˛¡–±Ì-->
+   <!-- include-sources: Ë¶ÅÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠ÁöÑÁõÆÂΩïÂíåÊ∫êÊñá‰ª∂ÂàóË°®-->
    <!-- include-sources usage:
    <include-sources>
       <path-element>string</path-element>
       <path-element>string</path-element>
    </include-sources>
    -->
-   <!-- include-stylesheet: “™∞¸∫¨‘⁄ ‰≥ˆ SWC ÷–µƒ√¸√˚—˘ Ω±Ì◊ ‘¥¡–±Ì-->
+   <!-- include-stylesheet: Ë¶ÅÂåÖÂê´Âú®ËæìÂá∫ SWC ‰∏≠ÁöÑÂëΩÂêçÊ†∑ÂºèË°®ËµÑÊ∫êÂàóË°®-->
    <!-- include-stylesheet usage:
    <include-stylesheet>
       <name>string</name>
@@ -403,39 +403,39 @@
       <path>string</path>
    </include-stylesheet>
    -->
-   <!-- includes: ππΩ® SWF  ±◊‹ «¡¥Ω”µƒ∑˚∫≈¡–±Ì-->
+   <!-- includes: ÊûÑÂª∫ SWF Êó∂ÊÄªÊòØÈìæÊé•ÁöÑÁ¨¶Âè∑ÂàóË°®-->
    <!-- includes usage:
    <includes>
       <symbol>string</symbol>
       <symbol>string</symbol>
    </includes>
    -->
-   <!-- link-report:  ‰≥ˆÀ˘”–¡¥Ω”µΩ”¶”√≥Ã–Úµƒ∂®“Âµƒ XML ∏Ò Ω±®∏Ê°£-->
+   <!-- link-report: ËæìÂá∫ÊâÄÊúâÈìæÊé•Âà∞Â∫îÁî®Á®ãÂ∫èÁöÑÂÆö‰πâÁöÑ XML Ê†ºÂºèÊä•Âëä„ÄÇ-->
    <!-- link-report usage:
    <link-report>filename</link-report>
    -->
-   <!-- load-config: º”‘ÿ∞¸∫¨≈‰÷√—°œÓµƒŒƒº˛-->
+   <!-- load-config: Âä†ËΩΩÂåÖÂê´ÈÖçÁΩÆÈÄâÈ°πÁöÑÊñá‰ª∂-->
    <load-config>${flexlib}/${configname}-config.xml</load-config>
-   <!-- load-externs: XML Œƒº˛£¨∆‰÷–∞¸∫¨ππΩ® SWF  ±£¨“™¥”¡¥Ω”÷–…æ≥˝µƒ <def>°¢<pre> ∫Õ <ext> ∑˚∫≈ -->
+   <!-- load-externs: XML Êñá‰ª∂ÔºåÂÖ∂‰∏≠ÂåÖÂê´ÊûÑÂª∫ SWF Êó∂ÔºåË¶Å‰ªéÈìæÊé•‰∏≠Âà†Èô§ÁöÑ <def>„ÄÅ<pre> Âíå <ext> Á¨¶Âè∑ -->
    <!-- load-externs usage:
    <load-externs>filename</load-externs>
    -->
    <metadata>
-      <!-- metadata.contributor: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ≤Œ”Î’ﬂµƒ√˚◊÷-->
+      <!-- metadata.contributor: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÂèÇ‰∏éËÄÖÁöÑÂêçÂ≠ó-->
       <!-- metadata.contributor usage:
       <contributor>name</contributor>
       -->
-      <!-- metadata.creator: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ◊˜’ﬂµƒ√˚◊÷-->
+      <!-- metadata.creator: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑ‰ΩúËÄÖÁöÑÂêçÂ≠ó-->
       <creator>unknown</creator>
-      <!-- metadata.date: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ¥¥Ω®»’∆⁄-->
+      <!-- metadata.date: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÂàõÂª∫Êó•Êúü-->
       <!-- metadata.date usage:
       <date>text</date>
       -->
-      <!-- metadata.description: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒƒ¨»œÀµ√˜-->
+      <!-- metadata.description: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÈªòËÆ§ËØ¥Êòé-->
       <description>http://www.adobe.com/products/flex</description>
-      <!-- metadata.language: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ”Ô—‘£®¿˝»Á EN°¢FR£©-->
+      <!-- metadata.language: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑËØ≠Ë®ÄÔºà‰æãÂ¶Ç EN„ÄÅFRÔºâ-->
       <language>EN</language>
-      <!-- metadata.localized-description: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ±æµÿªØµƒ RDF/XMP Àµ√˜-->
+      <!-- metadata.localized-description: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÊú¨Âú∞ÂåñÁöÑ RDF/XMP ËØ¥Êòé-->
       <!-- metadata.localized-description usage:
       <localized-description>
          <text>string</text>
@@ -443,7 +443,7 @@
          <lang>string</lang>
       </localized-description>
       -->
-      <!-- metadata.localized-title: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ±æµÿªØµƒ RDF/XMP ±ÍÃ‚-->
+      <!-- metadata.localized-title: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÊú¨Âú∞ÂåñÁöÑ RDF/XMP Ê†áÈ¢ò-->
       <!-- metadata.localized-title usage:
       <localized-title>
          <title>string</title>
@@ -451,33 +451,33 @@
          <lang>string</lang>
       </localized-title>
       -->
-      <!-- metadata.publisher: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ∑¢≤º»Àµƒ√˚◊÷-->
+      <!-- metadata.publisher: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÂèëÂ∏É‰∫∫ÁöÑÂêçÂ≠ó-->
       <publisher>unknown</publisher>
-      <!-- metadata.title: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒƒ¨»œ±ÍÃ‚-->
+      <!-- metadata.title: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑÈªòËÆ§Ê†áÈ¢ò-->
       <title>Adobe Flex 4 Application</title>
    </metadata>
-   <!-- output: “™¥¥Ω®µƒ SWF µÁ”∞µƒŒƒº˛√˚-->
+   <!-- output: Ë¶ÅÂàõÂª∫ÁöÑ SWF ÁîµÂΩ±ÁöÑÊñá‰ª∂Âêç-->
    <!-- output usage:
    <output>filename</output>
    -->
-   <!-- raw-metadata: “™¥Ê¥¢‘⁄ SWF ‘™ ˝æ›÷–µƒ XML Œƒ±æ£®÷ÿ–¥ metadata.* ≈‰÷√£©-->
+   <!-- raw-metadata: Ë¶ÅÂ≠òÂÇ®Âú® SWF ÂÖÉÊï∞ÊçÆ‰∏≠ÁöÑ XML ÊñáÊú¨ÔºàÈáçÂÜô metadata.* ÈÖçÁΩÆÔºâ-->
    <!-- raw-metadata usage:
    <raw-metadata>text</raw-metadata>
    -->
-   <!-- remove-unused-rsls: …æ≥˝”¶”√≥Ã–ÚŒ¥ π”√µƒ RSL-->
+   <!-- remove-unused-rsls: Âà†Èô§Â∫îÁî®Á®ãÂ∫èÊú™‰ΩøÁî®ÁöÑ RSL-->
    <remove-unused-rsls>true</remove-unused-rsls>
-   <!-- resource-bundle-list: Ω´◊ ‘¥ ¯¡–±Ì¥Ú”°µΩŒƒº˛£¨“‘±„ ‰»ÎµΩ compc ±‡“Î∆˜“‘¥¥Ω®◊ ‘¥ ¯ SWC Œƒº˛°£-->
+   <!-- resource-bundle-list: Â∞ÜËµÑÊ∫êÊùüÂàóË°®ÊâìÂç∞Âà∞Êñá‰ª∂Ôºå‰ª•‰æøËæìÂÖ•Âà∞ compc ÁºñËØëÂô®‰ª•ÂàõÂª∫ËµÑÊ∫êÊùü SWC Êñá‰ª∂„ÄÇ-->
    <!-- resource-bundle-list usage:
    <resource-bundle-list>filename</resource-bundle-list>
    -->
-   <!-- runtime-shared-libraries: “™‘⁄”¶”√≥Ã–Ú∆Ù∂Ø÷Æ«∞º”‘ÿµƒ‘À–– ±π≤œÌø‚ URL ¡–±Ì-->
+   <!-- runtime-shared-libraries: Ë¶ÅÂú®Â∫îÁî®Á®ãÂ∫èÂêØÂä®‰πãÂâçÂä†ËΩΩÁöÑËøêË°åÊó∂ÂÖ±‰∫´Â∫ì URL ÂàóË°®-->
    <!-- runtime-shared-libraries usage:
    <runtime-shared-libraries>
       <url>string</url>
       <url>string</url>
    </runtime-shared-libraries>
    -->
-   <!-- runtime-shared-library-path: ÷∏∂®¡¥Ω”À˘“¿¿µµƒ SWC£¨“‘º∞“™º”‘ÿµƒ RSL URL£®¥¯”–ø…—°≤ﬂ¬‘Œƒº˛ URL ∫Õø…—°π ’œ◊™“∆ URL£©-->
+   <!-- runtime-shared-library-path: ÊåáÂÆöÈìæÊé•ÊâÄ‰æùËµñÁöÑ SWCÔºå‰ª•ÂèäË¶ÅÂä†ËΩΩÁöÑ RSL URLÔºàÂ∏¶ÊúâÂèØÈÄâÁ≠ñÁï•Êñá‰ª∂ URL ÂíåÂèØÈÄâÊïÖÈöúËΩ¨Áßª URLÔºâ-->
    <!-- runtime-shared-library-path usage:
    <runtime-shared-library-path>
       <path-element>string</path-element>
@@ -486,14 +486,14 @@
    </runtime-shared-library-path>
    -->
    <runtime-shared-library-settings>
-      <!-- runtime-shared-library-settings.application-domain: ÷ÿ–¥º”‘ÿ RSL µƒ”¶”√≥Ã–Ú”Ú°£÷ß≥÷µƒ÷µŒ™°∞current°±°¢°∞default°±°¢°∞parent°±ªÚ°∞top-level°±°£-->
+      <!-- runtime-shared-library-settings.application-domain: ÈáçÂÜôÂä†ËΩΩ RSL ÁöÑÂ∫îÁî®Á®ãÂ∫èÂüü„ÄÇÊîØÊåÅÁöÑÂÄº‰∏∫‚Äúcurrent‚Äù„ÄÅ‚Äúdefault‚Äù„ÄÅ‚Äúparent‚ÄùÊàñ‚Äútop-level‚Äù„ÄÇ-->
       <!-- runtime-shared-library-settings.application-domain usage:
       <application-domain>
          <path-element>string</path-element>
          <application-domain-target>string</application-domain-target>
       </application-domain>
       -->
-      <!-- runtime-shared-library-settings.force-rsls: «ø÷∆º”‘ÿ RSL£¨∏≤∏« π”√ remove-unused-rsls —°œÓµº÷¬µƒ…æ≥˝-->
+      <!-- runtime-shared-library-settings.force-rsls: Âº∫Âà∂Âä†ËΩΩ RSLÔºåË¶ÜÁõñ‰ΩøÁî® remove-unused-rsls ÈÄâÈ°πÂØºËá¥ÁöÑÂà†Èô§-->
       <!-- runtime-shared-library-settings.force-rsls usage:
       <force-rsls>
          <path-element>string</path-element>
@@ -501,37 +501,37 @@
       </force-rsls>
       -->
    </runtime-shared-library-settings>
-   <!-- size-report:  ‰≥ˆ XML ∏Ò Ωµƒ±®∏Ê£¨∆‰÷–œÍœ∏¡–≥ˆ¡À¡¥Ω”÷¡”¶”√≥Ã–ÚµƒÀ˘”–¥˙¬Î∫Õ ˝æ›µƒ¥Û–°°£-->
+   <!-- size-report: ËæìÂá∫ XML Ê†ºÂºèÁöÑÊä•ÂëäÔºåÂÖ∂‰∏≠ËØ¶ÁªÜÂàóÂá∫‰∫ÜÈìæÊé•Ëá≥Â∫îÁî®Á®ãÂ∫èÁöÑÊâÄÊúâ‰ª£Á†ÅÂíåÊï∞ÊçÆÁöÑÂ§ßÂ∞è„ÄÇ-->
    <!-- size-report usage:
    <size-report>filename</size-report>
    -->
-   <!-- static-link-runtime-shared-libraries: æ≤Ã¨¡¥Ω””…°∞-runtime-shared-libraries-path°±—°œÓ÷∏∂®µƒø‚°£-->
+   <!-- static-link-runtime-shared-libraries: ÈùôÊÄÅÈìæÊé•Áî±‚Äú-runtime-shared-libraries-path‚ÄùÈÄâÈ°πÊåáÂÆöÁöÑÂ∫ì„ÄÇ-->
    <static-link-runtime-shared-libraries>false</static-link-runtime-shared-libraries>
-   <!-- swf-version: ÷∏∂®±‡“Îµƒ SWF Œƒº˛∞Ê±æ°£-->
-   <swf-version>11</swf-version>
-   <!-- target-player: ÷∏∂®”¶”√≥Ã–ÚÀ˘’Î∂‘µƒ≤•∑≈∆˜∞Ê±æ°£–Ë“™∏¸∏ﬂ∞Ê±æµƒπ¶ƒ‹Ω´≤ªª·±‡“ÎµΩ”¶”√≥Ã–Ú÷–°£÷ß≥÷µƒ◊Ó–°÷µ «°∞9.0.0°±°£-->
-   <target-player>11.0.0</target-player>
-   <!-- tools-locale: ÷∏∂®±‡“Î∆˜‘⁄±®∏Ê¥ÌŒÛ∫ÕæØ∏Ê ± π”√µƒ«¯”Ú…Ë÷√°£-->
+   <!-- swf-version: ÊåáÂÆöÁºñËØëÁöÑ SWF Êñá‰ª∂ÁâàÊú¨„ÄÇ-->
+   <swf-version>14</swf-version>
+   <!-- target-player: ÊåáÂÆöÂ∫îÁî®Á®ãÂ∫èÊâÄÈíàÂØπÁöÑÊí≠ÊîæÂô®ÁâàÊú¨„ÄÇÈúÄË¶ÅÊõ¥È´òÁâàÊú¨ÁöÑÂäüËÉΩÂ∞Ü‰∏ç‰ºöÁºñËØëÂà∞Â∫îÁî®Á®ãÂ∫è‰∏≠„ÄÇÊîØÊåÅÁöÑÊúÄÂ∞èÂÄºÊòØ‚Äú9.0.0‚Äù„ÄÇ-->
+   <target-player>11.1.0</target-player>
+   <!-- tools-locale: ÊåáÂÆöÁºñËØëÂô®Âú®Êä•ÂëäÈîôËØØÂíåË≠¶ÂëäÊó∂‰ΩøÁî®ÁöÑÂå∫ÂüüËÆæÁΩÆ„ÄÇ-->
    <!-- tools-locale usage:
    <tools-locale>string</tools-locale>
    -->
-   <!-- use-direct-blit:  π”√”≤º˛º”ÀŸ¿¥Ω´Õº–Œ¥´ÀÕµΩø…“‘º”ÀŸµƒ∆¡ƒª÷–°£-->
+   <!-- use-direct-blit: ‰ΩøÁî®Á°¨‰ª∂Âä†ÈÄüÊù•Â∞ÜÂõæÂΩ¢‰º†ÈÄÅÂà∞ÂèØ‰ª•Âä†ÈÄüÁöÑÂ±èÂπï‰∏≠„ÄÇ-->
    <!-- use-direct-blit usage:
    <use-direct-blit>boolean</use-direct-blit>
    -->
-   <!-- use-gpu: ‘⁄ø…“‘º”ÀŸµƒ«Èøˆœ¬ªÊ÷∆Õº–Œ ±£¨ π”√ GPU ∫œ≥…π¶ƒ‹°£-->
+   <!-- use-gpu: Âú®ÂèØ‰ª•Âä†ÈÄüÁöÑÊÉÖÂÜµ‰∏ãÁªòÂà∂ÂõæÂΩ¢Êó∂Ôºå‰ΩøÁî® GPU ÂêàÊàêÂäüËÉΩ„ÄÇ-->
    <!-- use-gpu usage:
    <use-gpu>boolean</use-gpu>
    -->
-   <!-- use-network: «–ªª «∑ÒΩ´ SWF ±Íº«Œ™ø…“‘∑√Œ Õ¯¬Á◊ ‘¥-->
+   <!-- use-network: ÂàáÊç¢ÊòØÂê¶Â∞Ü SWF Ê†áËÆ∞‰∏∫ÂèØ‰ª•ËÆøÈóÆÁΩëÁªúËµÑÊ∫ê-->
    <use-network>true</use-network>
-   <!-- verify-digests: —È÷§‘À–– ±º”‘ÿµƒø‚ «∑Ò’˝»∑°£-->
+   <!-- verify-digests: È™åËØÅËøêË°åÊó∂Âä†ËΩΩÁöÑÂ∫ìÊòØÂê¶Ê≠£Á°Æ„ÄÇ-->
    <verify-digests>false</verify-digests>
-   <!-- version: œ‘ æ≥Ã–Úµƒƒ⁄≤ø∞Ê±æ∫≈-->
+   <!-- version: ÊòæÁ§∫Á®ãÂ∫èÁöÑÂÜÖÈÉ®ÁâàÊú¨Âè∑-->
    <!-- version usage:
    <version>boolean</version>
    -->
-   <!-- warnings: «–ªªœ‘ æ/≤ªœ‘ ææØ∏Ê-->
+   <!-- warnings: ÂàáÊç¢ÊòæÁ§∫/‰∏çÊòæÁ§∫Ë≠¶Âëä-->
    <!-- warnings usage:
    <warnings>boolean</warnings>
    -->

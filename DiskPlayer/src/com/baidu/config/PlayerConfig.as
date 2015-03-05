@@ -52,14 +52,14 @@ package com.baidu.config
 			return _onReadyFunc;
 		}
 		public function SetOnReadyFunc(onReadyFunc:String):void {
-			_onReadyFunc = onReadyFunc;
+			_onReadyFunc = replaceXssStr(onReadyFunc);
 		}
 		
 		public function GetOnLoadFunc():String {
 			return _onLoadFunc;
 		}
 		public function SetOnLoadFunc(onLoadFunc:String):void {
-			_onLoadFunc = onLoadFunc;
+			_onLoadFunc = replaceXssStr(onLoadFunc);
 		}
 		
 		
@@ -69,7 +69,7 @@ package com.baidu.config
 			return _onTimeFunc;
 		}
 		public function SetOnTimeFunc(onTimeFunc:String):void {
-			_onTimeFunc = onTimeFunc;
+			_onTimeFunc = replaceXssStr(onTimeFunc);
 		}
 		
 		private var _fsid:String = "";
@@ -106,17 +106,21 @@ package com.baidu.config
 			return _onPlayOverFunc;
 		}
 		public function SetOnPlayOverFunc(onPlayOverFunc:String):void {
-			_onPlayOverFunc = onPlayOverFunc;
+			_onPlayOverFunc = replaceXssStr(onPlayOverFunc);;
 		}
 		
 		public function GetOnPlayerErrorFunc():String {
 			return _onPlayerErrorFunc;
 		}
 		public function SetOnPlayerErrorFunc(onPlayerErrorFunc:String):void {
-			_onPlayerErrorFunc = onPlayerErrorFunc;
+			_onPlayerErrorFunc = replaceXssStr(onPlayerErrorFunc);
 		}
 		
-		
+		private function replaceXssStr(str:String):String {
+			str = str || '';
+			str = str.replace(/(\(|\)|>|<|'|")/g, '');
+			return str;
+		}
 		
 		private var _showSearch:String = "";
 		

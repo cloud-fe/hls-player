@@ -80,7 +80,8 @@ package org.denivip.osmf.elements
 				_loadTime = getTimer() - _loadTime;
 				var url:String = _loadTrait.resource['url'];
 				sendReport('m3uloader', false, _loadTime, {
-					loadUrl: encodeURIComponent(url)
+					loadUrl: encodeURIComponent(url),
+					httpstatus: 400
 				});
 				
                 _errorHit = true;
@@ -130,6 +131,13 @@ package org.denivip.osmf.elements
 				if (!parseResult) {
 					sendReport('m3uloader', false, tLoadTime, tObj);
 					var resultObj:Object = JSON.parse(resData);
+					
+					if (!resultObj) {
+						resultObj = {};
+					}
+					resultObj.loadUrl = url;
+					resultObj.httpstatus = 200;
+					
 					errorFunc.call(null, resultObj);
 				} else {
 					sendReport('m3uloader', true, tLoadTime, tObj);
