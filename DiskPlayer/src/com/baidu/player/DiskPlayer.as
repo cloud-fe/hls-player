@@ -100,7 +100,12 @@
 				PlayerUI.ShowSubSearchPanel = config.GetShowSearch() == '1' ? true : false;
 			} else {
 				config = new PlayerConfig();
+				config.SetAutoStart(false);
+				//config.SetFile("http://zq.baidu.com:8080/static/avatar-tlrf_h480p/avatar-tlrf_h480p.m3u8");
 				//config.SetFile("http://zq.baidu.com:8080/static/video.m3u8");
+				//config.SetFile('http://zq.baidu.com:8080/static/avatar-tlrf_h480p/avatar-tlrf_h480p00.mp4');
+				//config.SetFile("http://zq.baidu.com:8080/static/video1.m3u8");
+				//config.SetResourceType('mp4');
 			}
 			//call onload method
 			if (config.GetOnLoadFunc()) {
@@ -132,7 +137,6 @@
 			player.addEventListener(MediaPlayerStateChangeEvent.MEDIA_PLAYER_STATE_CHANGE, onMediaLoadStateChange);
 			player.addEventListener(LoadEvent.LOAD_STATE_CHANGE, onLoadStateChange);
 			
-			
 			container = new MediaContainer();
 			initPlayer(this.width, this.height, container);
 			
@@ -163,8 +167,9 @@
 		private function createResource(url:String):void
 		{
 			var res:URLResource = new URLResource(url);
-			res.addMetadataValue("content-type", "application/x-mpegURL");
-			
+			if (config.GetResourceType() === 'mpeg') {
+				res.addMetadataValue("content-type", "application/x-mpegURL");
+			}
 			var element:MediaElement = factory.createMediaElement(res);
 			var elementLayout:LayoutMetadata = new LayoutMetadata();
 			elementLayout.percentHeight = 100;
@@ -185,12 +190,14 @@
 			pBar.buffer = 0;
 			storage = PlayerUI.getStorage();
 			//volume
+			
 			if (typeof storage.data[PlayerConst.CACHE_VOLUME] == 'undefined') {
 				storage.data[PlayerConst.CACHE_VOLUME] = 60;
 				storage.flush();
 			}
-			vBar.volume = Number(storage.data[PlayerConst.CACHE_VOLUME]);
-			setVolume(vBar.volume);
+			var storageVolume:int = Number(storage.data[PlayerConst.CACHE_VOLUME]); 
+			vBar.volume = storageVolume;
+			setVolume(storageVolume, true);
 			playBtn.show();
 			pauseBtn.hide();
 			bigPlayBtn.hide();
@@ -241,7 +248,20 @@
 		}
 		private function play():void {
 			if (player != null && player.canPlay) {
+				var result:Boolean = true;
+				if (config.GetOnBeforePlayFunc()) {
+					try {
+						result = Boolean(ExternalInterface.call(config.GetOnBeforePlayFunc()));
+					} catch(error:Error) {
+					}
+				}
+				if (!result) {
+					return;
+				}
 				player.play();
+				if (config.GetOnPlayFunc()) {
+					ExternalInterface.call(config.GetOnPlayFunc());
+				}
 			}
 		}
 		private function hiddenControlBar():void {
@@ -251,14 +271,34 @@
 		}
 		private function seek(num:Number):void {
 			if (player != null && player.canSeek && player.canSeekTo(num)) {
+				
+				var result:Boolean = true;
+				if (config.GetOnBeforeSeekFunc()) {
+					try {
+						result = Boolean(ExternalInterface.call(config.GetOnBeforeSeekFunc(), num, player.duration));
+					} catch(error:Error) {
+					}
+				}
+				if (!result) {
+					return;
+				}
+				
 				boolUserSeek = true;
 				userSeekStartTime = getTimer();
 				player.seek(num);
+				
+				if (config.GetOnSeekFunc()) {
+					ExternalInterface.call(config.GetOnSeekFunc(), num, player.duration);
+				}
 			}
 		}
 		private function pause():void {
-			if (player != null && player.canPause)
+			if (player != null && player.canPause) {
 				player.pause();
+				if (config.GetOnPauseFunc()) {
+					ExternalInterface.call(config.GetOnPauseFunc());
+				}
+			}
 		}
 		private function getState():String {
 			if (player != null) {
@@ -272,8 +312,33 @@
 			}
 			return 0;
 		}
-		private function setVolume(volume:Number):void {
+		private function setVolume(volume:Number, flagInit:Boolean = false):void {
 			if (player != null) {
+				
+				if (player.volume * 100 === volume && volume <= 100) {
+					return;
+				}
+				
+				var tips:String = '';
+				if (volume === 100 && player.volume <= 1) {
+					tips = '当前音量：100%  (按↑键继续放大音量)';
+				} else if (volume > 100 && volume <= 200) {
+					tips = '当前音量：' + (100 + ((volume - 100) / 25 * 100)) + '%';
+				} else if (volume > 200){
+					tips = '音量已调至最大';
+					volume = 200;
+				} else if (volume <= 0) {
+					tips = '静音模式';
+					volume = 0;
+				} else {
+					tips = '当前音量：' + volume + '%';
+				}
+				
+				
+				if (tips && !flagInit) {
+					PlayerUI.showLoadingTips(tips, 3000);
+				}
+				
 				storage.data[PlayerConst.CACHE_VOLUME] = volume;
 				storage.flush();
 				volume = volume / 100;
@@ -328,6 +393,8 @@
 				callBrowserError(obj);
 			}
 		}
+		
+		
 		
 		/**
 		 * player event
@@ -398,7 +465,15 @@
 					break;
 				case MediaPlayerState.READY :
 					if (!playedOver) {
-						play();
+						if (config.GetAutoStart()) {
+							play();
+						} else {
+							loading.hide();
+							playBtn.show();
+							bigPlayBtn.show();
+							bigPauseBtn.hide();
+							pauseBtn.hide();
+						}
 					}else {
 						if (config.GetOnPlayOverFunc()) {
 //							if (!flagIsLiving) {
@@ -451,6 +526,9 @@
 					}
 					tBar.time = CommonUtils.format(event.time);
 					pBar.cursor = Number(event.time / player.duration * 100);
+					
+					//trace('=============================', player.bufferLength);
+					
 					subTitleBar.setPlayTime(event.time);
 					if (event.time != 0 && event.time >= player.duration -3) {
 						playedOver = true;
@@ -477,11 +555,18 @@
 				stream.addEventListener(HTTPStreamingEvent.DOWNLOAD_COMPLETE, onDownloadComplete);
 			}
 		}
+		
+		
 		private function onDownloadComplete(event:HTTPStreamingEvent):void
 		{
 			if (event.downloader.downloadBytesCount <= 0) {
 				return;
 			}
+			
+			//pBar.buffer = Number((player.currentTime + player.bufferLength) / player.duration * 100);
+			
+			//trace('=============================== buffer Time: ', player.bufferTime, '   buffer Length:', player.bufferLength);
+			
 			var speedObj:Object = {"url": event.url, bytes: event.downloader.downloadBytesCount, secs: event.downloader.downloadDuration};
 			speedArray.push(speedObj);
 			speedArrayTemp.push(speedObj);
@@ -530,6 +615,9 @@
 		override public function onPlayerEvent(code:String,param:*=null):void{
 			switch (code) {
 				case VolumeButton.VOLUME :
+					if (getVolume() >= 100 && param === 100) {
+						return;
+					}
 					vBar.volume = param;
 					setVolume(param);
 					break;
@@ -620,14 +708,27 @@
 					}
 					break;
 				case 38: 
-					keyValue =  getVolume() + 10;
-					setVolume(keyValue >= 100 ? 100 : keyValue);
+					keyValue = getVolume();
+					if (keyValue >= 100) {
+						keyValue = keyValue + 25;
+					} else {
+						keyValue = keyValue + 10;
+						if (keyValue > 100 && keyValue < 110) {
+							keyValue = 100;
+						}
+					}
+					setVolume(keyValue);
 					vBar.volume = getVolume();
 					break;
 				case 40:
-					keyValue =  getVolume() - 10;
-					if(keyValue >= 100) {
-						setVolume(100);
+					keyValue = getVolume();
+					if (keyValue > 100) {
+						keyValue = keyValue - 25;
+					} else {
+						keyValue = keyValue - 10;
+					}
+					if(keyValue >= 200) {
+						setVolume(200);
 					} else if (keyValue < 0) {
 						setVolume(0);
 					} else {
@@ -651,12 +752,16 @@
 		 */
 		private function initSrt():void {
 			if (this.config.GetSrturl()) {
-				new AjaxUtils(this.config.GetSrturl(), 'get', null, function(e:Event):void {;
+				new AjaxUtils(this.config.GetSrturl(), 'get', null, function(e:Event):void {
 					var data:Object = JSON.parse(e.target.data.toString());
 					if (data.errno == 0 && data.records && data.records.length > 0) {;
 						showSrt(data.records, false);
-					};
+					} else {
+						stBtn.updateSrtTips();
+					}
 				});
+			} else {
+				stBtn.updateSrtTips();
 			}
 		}
 		private function showSrt(srcDataList:Array, fromSearch:Boolean):void {

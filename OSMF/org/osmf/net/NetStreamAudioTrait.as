@@ -57,6 +57,17 @@ package org.osmf.net
 		{
 			var soundTransform:SoundTransform = netStream.soundTransform;				
 			soundTransform.volume = muted ? 0 : newVolume;
+			
+			// the max volume is 2
+			// default max volume is 1, more than default volume value is step .2
+			// example: 1.1, 1.2, ... 1.9, 2.0
+			if (newVolume > 1) {
+				soundTransform.leftToRight = newVolume - 1;
+				soundTransform.rightToLeft = newVolume - 1;
+			} else {
+				soundTransform.leftToRight = 0;
+				soundTransform.rightToLeft = 0;
+			}
 			netStream.soundTransform = soundTransform;
 		}
 		

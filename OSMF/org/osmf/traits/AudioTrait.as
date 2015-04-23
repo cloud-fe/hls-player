@@ -117,14 +117,15 @@ package org.osmf.traits
 		
 		public final function set volume(value:Number):void
 		{
+			
 			// Coerce the value into our range:
 			if (isNaN(value))
 			{
 				value = 0;
 			}
-			else if (value > 1)
+			else if (value > 2)
 			{
-				value = 1;
+				value = 2;
 			}
 			else if (value < 0)
 			{

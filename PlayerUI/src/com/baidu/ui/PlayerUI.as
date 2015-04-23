@@ -271,6 +271,7 @@
 			videoLightBar.height = ch;
 			
 			subTitleBar.x=cw/2;
+			//subTitleBar.height = stage.stageHeight / 8;
 			subTitleBar.y=controlContainer.y-subTitleBar.height;
 
 			pTip.y = controlContainer.y;

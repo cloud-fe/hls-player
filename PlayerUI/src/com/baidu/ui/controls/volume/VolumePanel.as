@@ -42,6 +42,7 @@
 		};
 		
 		public function set volume(v:Number):void{
+			v = Math.min(v, 100);
 			mcProBar.height=Math.round(80*v/100);
 			mcCurBar.y=-40-mcProBar.height;
 			mcSilentBar.visible = v == 0;

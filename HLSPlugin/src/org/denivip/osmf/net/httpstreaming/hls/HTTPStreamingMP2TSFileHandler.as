@@ -78,6 +78,18 @@ package org.denivip.osmf.net.httpstreaming.hls
 		
 		override public function processFileSegment(input:IDataInput):ByteArray
 		{
+			/*
+			var bytesAvailableStart:uint = input.bytesAvailable;
+			var output:ByteArray = new ByteArray();;
+			
+			
+			trace('processFileSegment:', bytesAvailableStart);
+
+			input.readBytes(output, 0, bytesAvailableStart);
+			
+			return output.length == 0 ? null : output;
+			*/
+			
 			var bytesAvailableStart:uint = input.bytesAvailable;
 			var output:ByteArray;
 			

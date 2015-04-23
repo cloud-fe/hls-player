@@ -303,7 +303,8 @@ package org.denivip.osmf.net.httpstreaming.hls
 		 */
 		public function getBytes():ByteArray
 		{
-			return doSomeProcessingAndGetBytes();
+			var byteArray:ByteArray = doSomeProcessingAndGetBytes();
+			return byteArray;
 		}
 		
 		/**

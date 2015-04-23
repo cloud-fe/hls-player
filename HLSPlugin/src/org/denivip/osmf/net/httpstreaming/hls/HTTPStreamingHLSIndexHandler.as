@@ -397,7 +397,7 @@
 					}
 					_matchCounter = 0; // reset error counter!
 				}
-				if(_segment >= manifest.length){ // Try to force a reload
+				//(_segment >= manifest.length || (_segment + 10 >= manifest.length)){ // Try to force a reload
 					CONFIG::LOGGING
 					{
 						_reloadTime = getTimer();
@@ -409,9 +409,13 @@
 					if (requestRertyCount > 3) {
 						requestRertyCount = 0;
 					}
-					return new HTTPStreamRequest(HTTPStreamRequestKind.LIVE_STALL, null, 1.0);
-				}
+					
+					if (_segment >= manifest.length) {
+						return new HTTPStreamRequest(HTTPStreamRequestKind.LIVE_STALL, null, 1.0);
+					}
+				//}
 			}
+			
 			
 			if(_segment >= manifest.length){ // if playlist ended, then end =)
 				return new HTTPStreamRequest(HTTPStreamRequestKind.DONE);

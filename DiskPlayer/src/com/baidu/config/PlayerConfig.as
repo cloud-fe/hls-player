@@ -17,6 +17,19 @@ package com.baidu.config
 		private var _srturl:String = "";
 		
 		/**
+		 * 是否自动播放
+		 */
+		private var _autoStart:Boolean = true;
+		
+		public function GetAutoStart():Boolean {
+			return _autoStart;
+		}
+		public function SetAutoStart(autoStart:Boolean):void {
+			_autoStart = autoStart;
+		}
+		
+		
+		/**
 		 * 搜索字幕函数
 		 */
 		private var _searchSrtFunc:String = "";
@@ -25,6 +38,25 @@ package com.baidu.config
 		
 		private var _onPlayerErrorFunc:String = "";
 		
+		
+		private var _onSeekFunc:String = "";
+		
+		private var _onPlayFunc:String = "";
+		
+		private var _onPauseFunc:String = "";
+		
+		/**
+		 * 视频类型，默认为 mpeg
+		 * 可选： pm4等
+		 */
+		private var _resourceType:String = "mpeg";
+		
+		public function GetResourceType():String {
+			return _resourceType;
+		}
+		public function SetResourceType(type:String):void{
+			_resourceType = type;
+		}
 		
 		private var _md5:String = "";
 		
@@ -102,6 +134,13 @@ package com.baidu.config
 			_searchSrtFunc = searchSrtFunc;
 		}
 		
+		public function GetOnSeekFunc():String {
+			return _onSeekFunc;
+		}
+		public function SetOnSeekFunc(onSeekFunc:String):void {
+			_onSeekFunc = onSeekFunc;
+		}
+		
 		public function GetOnPlayOverFunc():String {
 			return _onPlayOverFunc;
 		}
@@ -131,12 +170,46 @@ package com.baidu.config
 			_showSearch = showSearch;
 		}
 		
+		public function GetOnPlayFunc():String {
+			return _onPlayFunc;
+		}
+		public function SetOnPlayFunc(onPlayFunc:String):void {
+			_onPlayFunc = onPlayFunc;
+		}
+		
+		public function GetOnPauseFunc():String {
+			return _onPauseFunc;
+		}
+		public function SetOnPauseFunc(onPauseFunc:String):void {
+			_onPauseFunc = onPauseFunc;
+		}
+		
+		
+		private var _onBeforePlayFunc:String = '';
+		public function GetOnBeforePlayFunc():String {
+			return _onBeforePlayFunc;
+		}
+		public function SetOnBeforePlayFunc(onBeforePlayFunc:String):void {
+			_onBeforePlayFunc = onBeforePlayFunc;
+		}
+		
+		private var _onBeforeSeekFunc:String = '';
+		public function GetOnBeforeSeekFunc():String {
+			return _onBeforeSeekFunc;
+		}
+		public function SetOnBeforeSeekFunc(onBeforeSeekFunc:String):void {
+			_onBeforeSeekFunc = onBeforeSeekFunc;
+		}
+		
+		
 		
 		public static function initConfig(info:Object):PlayerConfig {
 			var config:PlayerConfig = new PlayerConfig();
 			//file infos
 			config.SetFile(info.file);
-			config.SetSrturl(info.srturl);
+			if (info.srturl) {
+				config.SetSrturl(info.srturl);
+			}
 			config.SetFsid(info.fsid);
 			
 			//settings
@@ -148,6 +221,20 @@ package com.baidu.config
 			config.SetOnReadyFunc(info.onReady);
 			config.SetOnTimeFunc(info.onTime);
 			config.SetOnLoadFunc(info.onLoad);
+			config.SetOnSeekFunc(info.onSeek);
+			config.SetOnPlayFunc(info.onPlay);
+			config.SetOnPauseFunc(info.onPause);
+			
+			config.SetOnBeforePlayFunc(info.onBeforePlay);
+			config.SetOnBeforeSeekFunc(info.onBeforeSeek);
+			
+			if (info.autoStart == 'false') {
+				config.SetAutoStart(false);
+			}
+			
+			if (info.resourceType) {
+				config.SetResourceType(info.resourceType);
+			}
 			return config;
 		}
 	}

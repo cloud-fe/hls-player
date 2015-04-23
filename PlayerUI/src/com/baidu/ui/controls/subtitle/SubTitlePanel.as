@@ -256,6 +256,10 @@
 			}
 			return subTitlePanelList.addSrtData(datas,autoSelected);
 		}
+		
+		public function updateSrtTips():void {
+			subTitlePanelNoInfor.lblSrtTips.text = '啊哦，没有找到匹配的字幕';
+		}
 	}
 
 }

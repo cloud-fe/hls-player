@@ -107,6 +107,10 @@
 			});*/
 			return subTitlePanel.addSrtData(datas,autoSelected);
 		}
+		
+		public function updateSrtTips():void {
+			subTitlePanel.updateSrtTips();
+		}
 	}
 
 }

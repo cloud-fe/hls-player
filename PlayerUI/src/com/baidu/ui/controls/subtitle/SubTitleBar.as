@@ -20,13 +20,16 @@
 		private var textFormat:TextFormat;
 		private var srt:Srt = null;
 		private var adJustTime:uint = 0;
+		
+		private var minSubTitleSize:int = 18;
+		
 		public function SubTitleBar() {
 			mcSrtTxt.text = "";
 
 			var storage:SharedObject = com.baidu.ui.PlayerUI.getStorage();
 			var fontsize:int = int(storage.data[com.baidu.ui.PlayerUI.SRTFONTSIZE]);
 			if (! fontsize) {
-				fontsize = 18;
+				fontsize = minSubTitleSize;
 			}
 			textFormat = new TextFormat();
 			textFormat.font = "黑体";
@@ -48,6 +51,14 @@
 		}
 		public function setFontSize(fontsize:int):void {
 			trace("字幕字体被更改"+fontsize);
+
+			//暂定为最大的字体大小
+			//var subTitleHeight = parseInt(stage.stageHeight / 8, 10);
+			//minSubTitleSize 最小的字体大小
+			//间隔的字体大小
+			//var divSubTitleHeight =  parseInt((subTitleHeight - minSubTitleSize) / 3, 10);
+			
+			
 			textFormat.size = fontsize;
 			mcSrtTxt.setTextFormat(textFormat);
 			mcSrtTxt.height = 42+(fontsize-18)*2;

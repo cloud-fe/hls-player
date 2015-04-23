@@ -237,6 +237,10 @@ package org.denivip.osmf.net.httpstreaming.hls
 			{
 				var spsLength:Number = spsNAL.length;
 				var ppsLength:Number = ppsNAL.length;
+				
+				
+				
+				
 				tag = new FLVTagVideo();
 				
 				tag.timestamp = _timestamp;
